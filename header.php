@@ -328,6 +328,8 @@
                                                 </ul>
                                             </li>
                                             <li><a href="products-gypsum-plaster.php">Gypsum Plaster</a></li>
+                                            <li><a href="tgrid.php">T-grid</a></li>
+
                                             <li><a href="products-smart-wall-putty.php">Smart Wall Putty</a></li>
                                             <li><a href="products-bond-it.php">Classic Bond</a></li>
                                             <li><a href="gymsum-board.php">Western Gypsum Board</a></li>

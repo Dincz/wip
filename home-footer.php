@@ -106,24 +106,6 @@
                               <li><a href="about.php">About</a></li>
                               <li><a href="about.php">Products</a></li>
                               <li><a href="about.php">Projects</a></li>
-                              <!-- <li><a href="products-western-steel.php">Western Steel (GI)</a></li>
-                              <li><a href="products-western-galvalume.php">Western Galvalume</a></li>
-                              <li><a href="products-western-frame.php">Western Frame (GI)</a></li>
-                              <li><a href="products-accessories.php">Accessories</a></li>
-                              <li><a href="products-gypsum-plaster.php">Gypsum Plaster</a></li>
-                              <li><a href="products-smart-wall-putty.php">Smart Wall Putty</a></li>
-                              <li><a href="products-bond-it.php">Classic Bond</a></li>
-                              <li><a href="products-threaded-rod.php">Western Threaded Rod System</a></li> -->
-                              <!--<li><a href="products-western-operable-walls.php">Western Operable Walls</a></li>-->
-                              <!--<li><a href="products-flush-doors.php">Flush Doors</a></li>-->
-                              <!-- <li><a href="commercial-projects.php">Commercial Projects</a></li>
-                              <li><a href="residential-projects.php">Residential Projects</a></li>
-                              <li><a href="hospitality-projects.php">Hospitality Projects</a></li>
-                              <li><a href="healthcare-projects.php">Healthcare Projects</a></li>
-                              <li><a href="education-projects.php">Education Projects</a></li>
-                              <li><a href="government-projects.php">Government Projects</a></li>
-                              <li><a href="industrial-projects.php">Industrial Projects</a></li>
-                              <li><a href="theatre-multiplex-projects.php">Theatre & Multiplex Projects</a></li> -->
                               <li><a href="products-inhouse-material-testing-laboratory.php">Testing Laboratory</a></li>
                               <li><a href="contact.php">Contact</a></li>
 

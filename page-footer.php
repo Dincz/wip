@@ -1,7 +1,8 @@
 <style>
-   .social-icon-two a{
-      color: white!important;
+   .social-icon-two a {
+      color: white !important;
    }
+
    .floatButons {
       position: fixed;
       bottom: 40%;
@@ -16,7 +17,7 @@
 
    @media (max-width:600px) {
       .floatButons {
-         width: 100% ;
+         width: 100%;
          position: fixed;
          bottom: 0px !important;
          right: 0px !important;
@@ -24,18 +25,43 @@
          transform: rotate(0deg) !important;
          display: flex;
       }
+
       .floatButons .btn {
-      letter-spacing: 0px !important; 
-      width: 50% !important;
+         letter-spacing: 0px !important;
+         width: 50% !important;
+      }
    }
+
+   /* Pop Up model */
+   .contact-form input,
+   .contact-form select,
+   .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+   }
+
+   .contact-form .g-recaptcha {
+      margin-bottom: 15px;
+   }
+
+   .float-text {
+      color: #999;
+      display: block;
+      margin-bottom: 10px;
+   }
+
+   .sec-title h2 {
+      margin-top: 0;
    }
 </style>
 <!-- Main Footer -->
 
-<div class="floatButons ">
+<div class="floatButons">
 
-   <button class="btn btn-primary rounded-0 fw-semibold lh-1">Get in touch</button>
-   <button class="btn btn-primary rounded-0 fw-semibold lh-1">Download Brochure</button>
+   <button class="btn btn-primary rounded-0 fw-semibold lh-1" data-toggle="modal" data-target="#contactModal">Get in touch</button>
+   <button class="btn btn-primary rounded-0 fw-semibold lh-1" onclick="downloadPDF()">Download Brochure</button>
 
 </div>
 <footer class="main-footer" style="background-image: url(images/background/5.jpg);">
@@ -173,7 +199,7 @@
                                     </div>
 
                                  </div>
-                              
+
 
 
                                  <div class="col-lg-12 col-md-12">
@@ -214,18 +240,18 @@
                   <li><a href="https://www.linkedin.com/in/westerninfrabuildproductsllp-657541139/" target="_blank"><i
                            class="fa fa-linkedin"></i></a></li>
                </ul> -->
-                <ul class="social-icon-two d-flex align-items-center">
+               <ul class="social-icon-two d-flex align-items-center">
 
-                            <li><a href="https://www.linkedin.com/company/western-infrabuild-products-llp/"
-                                    target="_blank" class="text-white ms-3"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="https://www.facebook.com/p/Western-Infrabuild-Products-LLP-100087516592602/"
-                                    target="_blank" class="text-white ms-3"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="https://www.instagram.com/westerninfrabuildproducts/" target="_blank"
-                                    class="text-white ms-3"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="https://www.youtube.com/@WesternInfrabuildProducts" target="_blank"
-                                    class="text-white ms-3"><i class="fa fa-youtube"></i></a></li>
-                        </ul>
-           
+                  <li><a href="https://www.linkedin.com/company/western-infrabuild-products-llp/"
+                        target="_blank" class="text-white ms-3"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="https://www.facebook.com/p/Western-Infrabuild-Products-LLP-100087516592602/"
+                        target="_blank" class="text-white ms-3"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="https://www.instagram.com/westerninfrabuildproducts/" target="_blank"
+                        class="text-white ms-3"><i class="fa fa-instagram"></i></a></li>
+                  <li><a href="https://www.youtube.com/@WesternInfrabuildProducts" target="_blank"
+                        class="text-white ms-3"><i class="fa fa-youtube"></i></a></li>
+               </ul>
+
             </div>
             <div class="copyright-text">
                <p>Copyright © 2020 Western Infrabuild Products LLP</p>
@@ -237,6 +263,78 @@
 <!-- End Main Footer -->
 
 </div>
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel">
+   <div class="modal-dialog" role="document">
+      <div class="modal-content">
+         <div class="modal-header">
+            <div class="sec-title">
+               <h2 id="contactModalLabel">Contact Us</h2>
+            </div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+            </button>
+
+         </div>
+         <div class="modal-body">
+            <div class="contact-form">
+               <form action="successformcontact.php" method="post">
+                  <div class="row">
+                     <div class="col-lg-12">
+                        <input type="text" name="first_name" placeholder="Name" required>
+                     </div>
+                     <div class="col-lg-12">
+                        <input type="email" name="email" placeholder="Email" required>
+                     </div>
+                     <div class="col-lg-12">
+                        <input type="text" name="last_name" placeholder="Phone" required maxlength="10">
+                     </div>
+                     <div class="col-lg-12">
+                        <select name="product" required>
+                           <option value="">Select a Product</option>
+                           <option value="Western Steel (GI)">Western Steel (GI)</option>
+                           <option value="Western Galvalume">Western Galvalume</option>
+                           <option value="Western Frame (GI)">Western Frame (GI)</option>
+                           <option value="Western Threaded Rod System">Western Threaded Rod System</option>
+                           <option value="Accessories">Accessories</option>
+                           <option value="Gypsum Plaster">Gypsum Plaster</option>
+                           <option value="Smart Wall Putty">Smart Wall Putty</option>
+                           <option value="Classic Bond">Classic Bond</option>
+                           <option value="Western Gypsum Board">Western Gypsum Board</option>
+                           <option value="Access Panels">Access Panels</option>
+                        </select>
+                     </div>
+                     <div class="col-lg-12">
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                     </div>
+                     <div class="col-lg-12">
+                        <div class="g-recaptcha" data-sitekey="6LeOZ6waAAAAANgmnM0nrtWti9KlsKdxE5U-qFtm"
+                           style="transform:scale(0.7);transform-origin:0;-webkit-transform:scale(0.7); transform:scale(0.7);-webkit-transform-origin:0 0;transform-origin:0 0;">
+                        </div>
+                     </div>
+                     <div class="col-lg-12">
+                        <button class="btn btn-primary" type="submit" name="submitformcontact">Submit</button>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<!-- Download Script -->
+
+<script>
+   function downloadPDF() {
+      // Create an anchor element
+      const link = document.createElement('a');
+      link.href = 'pdf/westerninfra-e-brochure.pdf'; // Path to your PDF
+      link.download = 'westerninfra-e-brochure.pdf'; // Filename for download
+      link.click(); // Trigger download
+   }
+</script>
+
+<!--  -->
 
 
 
@@ -256,6 +354,13 @@
 <!-- Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
    integrity="sha384-kQtW33rZJAHjgefv2yWtxI/3lvLF3L4snJzS5NEEIr5CRfwTZ7GxWXOXm9O7KJ0d" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Bootstrap 3.3.7 JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Google reCAPTCHA -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 
 </html>
