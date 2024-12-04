@@ -1,17 +1,21 @@
 <?php include 'header.php'; ?>
 
 <?php
-$products = [
-    ['title' => 'Western Steel [GI]', 'image' => "images/products/ceilingsection-gi/cielingsection.jpg", 'link' => 'products-western-steel.php'],
-    ['title' => 'Western Galvalume', 'image' => "images/products/Untitled design (3).png", 'link' => 'products-western-galvalume.php'],
-    ['title' => 'Western Frame [GI]', 'image' => "images/products/intermediatechannel-wf/_T6A0290.jpg", 'link' => 'products-western-frame.php'],
-    ['title' => 'Accessories', 'image' => "images/products/sofitcleat/T6A036901.jpg", 'link' => 'products-accessories.php'],
-    ['title' => 'T-Grid', 'image' => "images/products/Untitled design (2).png", 'link' => 'tgrid.php'],
+$cellingProducts = [
+
     ['title' => 'Gypsum Plaster', 'image' => "images/products/westernonecoat/western_bagsOneCoat3.jpg", 'link' => 'products-gypsum-plaster.php'],
     ['title' => 'Smart Wall Putty', 'image' => "images/products/wcsmartwallputty/putti bag.jpg", 'link' => 'products-smart-wall-putty.php'],
     ['title' => 'Classic Bond', 'image' => "images/products/westernclassicbond/Classic-bond-Small.jpg", 'link' => 'products-bond-it.php'],
     ['title' => 'Western Gypsum Board', 'image' => "images/products/westerngypsumboard.png", 'link' => 'gymsum-board.php'],
     ['title' => 'Access Panels', 'image' => "images/products/Westernacesspanel.png", 'link' => 'acessplane.php'],
+];
+$drywallroducts = [
+
+    ['title' => 'Western Steel [GI]', 'image' => "images/products/ceilingsection-gi/cielingsection.jpg", 'link' => 'products-western-steel.php'],
+    ['title' => 'Western Galvalume', 'image' => "images/products/Untitled design (3).png", 'link' => 'products-western-galvalume.php'],
+    ['title' => 'Western Frame [GI]', 'image' => "images/products/intermediatechannel-wf/_T6A0290.jpg", 'link' => 'products-western-frame.php'],
+    ['title' => 'Accessories', 'image' => "images/products/sofitcleat/T6A036901.jpg", 'link' => 'products-accessories.php'],
+    ['title' => 'T-Grid', 'image' => "images/products/Untitled design (2).png", 'link' => 'tgrid.php'],
 ];
 ?>
 <!-- ABout us style -->
@@ -81,6 +85,9 @@ $products = [
 
 <!-- style for product ranges -->
 <style>
+    .subTitle{
+        font-weight: 800 !important;
+    }
     .product-card {
         position: relative;
         overflow: hidden;
@@ -135,6 +142,18 @@ $products = [
     .product-card .see-more-btn:hover {
         background-color: #286090;
     }
+    .img-responsive {
+        min-height: 200px !important;
+        width: auto !important;
+    }
+    .imgoverlay{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        background-color: black;
+        opacity: 0.2;
+    }
 </style>
 <!-- style for product range -->
 <!-- Banner Section -->
@@ -154,12 +173,16 @@ $products = [
 <div class="container-fluid">
     <section class="about-us-section">
         <div class="container">
-            <div class="row">
+            <div class="row ">
                 <div class="col-md-12">
                     <div class="about-us-content">
                         <h2 class="about-us-title">About Western Infrabuild Products LLP</h2>
                         <p class="about-us-description">
-                            Western Infrabuild Products LLP was incepted under the inspiring leadership of Mr. Ashfaque Z Khan with the vision of revolutionizing interior industry by providing high quality but cost-effective products. True to its vision, Western Infrabuild Products LLP has achieved many milestones in the interior designing industry by constantly and actively innovating its offerings to fulfill customer needs.
+                            Western Infrabuild Products LLP was incepted under the inspiring leadership of Mr. Ashfaque
+                            Z Khan with the vision of revolutionizing interior industry by providing high quality but
+                            cost-effective products. True to its vision, Western Infrabuild Products LLP has achieved
+                            many milestones in the interior designing industry by constantly and actively innovating its
+                            offerings to fulfill customer needs.
                         </p>
                         <div class="leadership-highlight">
                             Led by the visionary Mr. Ashfaque Z Khan
@@ -173,10 +196,11 @@ $products = [
 <!-- pc range -->
 <div class="container">
     <h2 class="text-center">Our Product Range</h2>
-    <div class="row">
+    <div class="row ">
         <div class="col-md-6">
             <div class="product-card card">
-                <div class="card-image" style="background-image: url('images/productbanner/new/falseceilingthumb.jpg');">
+                <div class="card-image"
+                    style="background-image: url('images/productbanner/new/falseceilingthumb.jpg');">
                     <div class="card-overlay">
                         <div class="card-text">
                             <h3>False Ceiling systems</h3>
@@ -191,7 +215,8 @@ $products = [
 
         <div class="col-md-6">
             <div class="product-card card">
-                <div class="card-image" style="background-image: url('images/productbanner/new/drywallpartitions.jpg');">
+                <div class="card-image"
+                    style="background-image: url('images/productbanner/new/drywallpartitions.jpg');">
                     <div class="card-overlay">
                         <div class="card-text">
                             <h3>Drywall Partition systems</h3>
@@ -210,17 +235,40 @@ $products = [
 <!-- Product Section -->
 <div class="container py-5">
     <h1 class="text-center text-uppercase fw-bold" style="letter-spacing: 5px; margin-bottom: 40px;">
-        <span style="background: linear-gradient(to right, #ff7f50, #ff6347); -webkit-background-clip: text; color: transparent;">Our Product Range</span>
+        <span
+            style="background: linear-gradient(to right, #ff7f50, #ff6347); -webkit-background-clip: text; color: transparent;">Our
+            Product Range</span>
     </h1>
-    <div class="row">
-        <?php foreach ($products as $product): ?>
+    <h2 class="fw-bold text-center subTitle">False Ceiling Systems</h2>
+    <div class="row align-items-center justify-content-center pb-5">
+        <?php foreach ($cellingProducts as $product): ?>
             <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img src="<?= $product['image'] ?>" alt="<?= $product['title'] ?>" class="img-responsive">
-                    <div class="caption text-center">
-                        <h4 class="product-title"><?= $product['title'] ?></h4>
+                <div class="thumbnail position-relative">
+                    <div class="imgoverlay"></div>
+                    <img src="<?= $product['image'] ?>" alt="<?= $product['title'] ?>" class="img-responsive ">
+                    <div class="caption text-left position-absolute" style="top:60%">
+                        <h4 class="m-0 product-title"><?= $product['title'] ?></h4>
                         <p>
-                            <a href="<?= $product['link'] ?>" class="btn btn-primary btn-block" role="button">Know More</a>
+                            <a href="<?= $product['link'] ?>" class="m-0 btn btn-primary rounded-0 text-left " role="button">Know More <i class="px-1 fa fa-chevron-right" aria-hidden="true"></i>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        <?php endforeach; ?>
+    </div>
+    <h1 class="fw-bold text-center subTitle">Drywall Partition System</h1>
+    <div class="row align-items-center justify-content-center">
+    <?php foreach ($drywallroducts as $product): ?>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail position-relative">
+                    <div class="imgoverlay"></div>
+                    <img src="<?= $product['image'] ?>" alt="<?= $product['title'] ?>" class="img-responsive ">
+                    <div class=" caption text-left position-absolute" style="top:60%">
+                        <h4 class="m-0 product-title" style="color:white"><?= $product['title'] ?></h4>
+                        <p>
+                            <a href="<?= $product['link'] ?>" class="m-0 btn btn-primary rounded-0 text-left " role="button">Know More <i class="px-1 fa fa-chevron-right" aria-hidden="true"></i>
+                            </a>
                         </p>
                     </div>
                 </div>
@@ -240,21 +288,24 @@ $products = [
             <div class="process-block col-lg-4 col-md-6 col-sm-12">
                 <div class="inner-box">
                     <span class="count">01</span>
-                    <div class="text">Only Indian Firm having fire rated drywall systems, fire test certificate issued by CBRI (Govt of India).</div>
+                    <div class="text">Only Indian Firm having fire rated drywall systems, fire test certificate issued
+                        by CBRI (Govt of India).</div>
                 </div>
             </div>
             <!-- Process Block -->
             <div class="process-block col-lg-4 col-md-6 col-sm-12">
                 <div class="inner-box">
                     <span class="count">02</span>
-                    <div class="text">Vast and in-depth experience in Commercial, Residential, Government, Retail, Industrial, Hospitality, Health care and other projects.</div>
+                    <div class="text">Vast and in-depth experience in Commercial, Residential, Government, Retail,
+                        Industrial, Hospitality, Health care and other projects.</div>
                 </div>
             </div>
             <!-- Process Block -->
             <div class="process-block col-lg-4 col-md-6 col-sm-12">
                 <div class="inner-box">
                     <span class="count">03</span>
-                    <div class="text">A legacy of prompt service from manufacturing to supplying material on time with impeccable accuracy and quality.</div>
+                    <div class="text">A legacy of prompt service from manufacturing to supplying material on time with
+                        impeccable accuracy and quality.</div>
                 </div>
             </div>
             <!-- Process Block -->
@@ -282,7 +333,8 @@ $products = [
             <div class="process-block col-lg-4 col-md-6 col-sm-12">
                 <div class="inner-box">
                     <span class="count">07</span>
-                    <div class="text">In house team for system designs and profile customization as per the project and client requirements.</div>
+                    <div class="text">In house team for system designs and profile customization as per the project and
+                        client requirements.</div>
                 </div>
             </div>
             <!-- Process Block -->
@@ -601,7 +653,7 @@ $products = [
         }
     </style>
     <script>
-        window.console = window.console || function(t) {};
+        window.console = window.console || function (t) { };
     </script>
     <script>
         if (document.location.search.match(/type=embed/gi)) {
@@ -677,12 +729,13 @@ $products = [
         </div>
     </div>
     <!--#Carousel Gallery-->
-    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+    <script
+        src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js'></script>
     <script id="rendered-js">
-        $(function() {
+        $(function () {
 
             var swiper = new Swiper('.carousel-gallery1 .swiper-container', {
                 effect: 'slide',
@@ -724,7 +777,8 @@ $products = [
         });
         //# sourceURL=pen.js
     </script>
-    <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-e03f509ba0a671350b4b363ff105b2eb009850f34a2b4deaadaa63ed5d970b37.js"></script>
+    <script
+        src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-e03f509ba0a671350b4b363ff105b2eb009850f34a2b4deaadaa63ed5d970b37.js"></script>
 </body>
 
 </html>
