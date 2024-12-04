@@ -1,9 +1,46 @@
 <style>
-   .social-icon-two   a {
+   .social-icon-two a {
       color: #fff !important;
+   }
+
+   .floatButons {
+      position: fixed;
+      bottom: 40%;
+      right: -135px;
+      z-index: 111;
+      transform: rotate(270deg);
+   }
+
+   .floatButons .btn {
+      letter-spacing: 2px;
+   }
+
+   @media (max-width:600px) {
+      .floatButons {
+         width: 100% ;
+         position: fixed;
+         bottom: 0px !important;
+         right: 0px !important;
+         z-index: 111;
+         transform: rotate(0deg) !important;
+         display: flex;
+      }
+      .floatButons .btn {
+      letter-spacing: 0px !important; 
+      width: 50% !important;
+   }
    }
 </style>
 <!-- Main Footer -->
+
+<div class="floatButons ">
+
+   <button class="btn btn-primary rounded-0 fw-semibold lh-1">Get in touch</button>
+   <button class="btn btn-primary rounded-0 fw-semibold lh-1">Download Brochure</button>
+
+</div>
+
+
 <footer class="main-footer" style="background-image: url(images/background/5.jpg);">
    <div class="auto-container">
       <!--Widgets Section-->
@@ -43,7 +80,8 @@
                            <div class="post1">
                               <p style="color: white;">Western Infrabuild Products LLP</p>
                               <ul class="info" style="color: white;">
-                                 <li>A-592, TTC Industrial Area, Mahape Circle,<br>MIDC Industrial Area, Ghansoli,<br>Navi Mumbai, Maharashtra 400701
+                                 <li>A-592, TTC Industrial Area, Mahape Circle,<br>MIDC Industrial Area,
+                                    Ghansoli,<br>Navi Mumbai, Maharashtra 400701
 
                                  <li>Tel No. : 022 - 27780104/05</li>
                                  <li>Mob No. : +91 - 9324683484 </li>
