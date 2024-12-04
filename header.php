@@ -314,7 +314,7 @@
                                     </li>
                                     <li><a href="about.php">About</a>
                                     </li>
-                                    <li class="dropdown"><a href="products-western-steel.php" onclick="window.location='productCategory.php'";>Products</a>
+                                    <li class="dropdown"><a href="products-western-steel.php" onclick="window.location='productCategory.php'" ;>Products</a>
                                         <ul>
                                             <li>
                                             <li class="dropdown">
@@ -330,8 +330,8 @@
                                             <li><a href="products-gypsum-plaster.php">Gypsum Plaster</a></li>
                                             <li><a href="products-smart-wall-putty.php">Smart Wall Putty</a></li>
                                             <li><a href="products-bond-it.php">Classic Bond</a></li>
-                                            <li><a href="gymsum-board.php">WESTERN GYPSUM BOARD</a></li>
-                                            <li><a href="acessplane.php">ACCESS PANELS</a></li>
+                                            <li><a href="gymsum-board.php">Western Gypsum Board</a></li>
+                                            <li><a href="acessplane.php">Access Panels</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown"><a>Projects</a>

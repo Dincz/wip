@@ -16,10 +16,10 @@
         width: 100%;
         object-fit: cover;
     }
+
     /* .contact-form {
         border: 2px solid #3498db;
     } */
-    
 </style>
 
 <?php include 'header.php'; ?>
@@ -48,15 +48,12 @@
     <div class="auto-container">
         <div class="row">
             <!-- Form Column -->
-            <div class="form-column col-lg-7 col-md-12 col-sm-12">
+            <div class="form-column col-lg-7 col-md-12 col-sm-12" id="product-inquiry">
                 <div class="inner-column">
                     <div class="sec-title">
                         <span class="float-text">Enquiry</span>
                         <h2>Contact Us</h2>
                     </div>
-
-                   
-
                     <div class="contact-form">
                         <form action="successformcontact.php" method="post">
                             <div class="row">
@@ -72,7 +69,23 @@
                                     <input type="text" name="last_name" placeholder="Phone" required maxlength="10">
                                 </div>
 
-                                <!-- Added message textarea -->
+                                <!-- New select field for products -->
+                                <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                                    <select name="product" required>
+                                        <option value="">Select a Product</option>
+                                        <option value="Western Steel (GI)">Western Steel (GI)</option>
+                                        <option value="Western Galvalume">Western Galvalume</option>
+                                        <option value="Western Frame (GI)">Western Frame (GI)</option>
+                                        <option value="Western Threaded Rod System">Western Threaded Rod System</option>
+                                        <option value="Accessories">Accessories</option>
+                                        <option value="Gypsum Plaster">Gypsum Plaster</option>
+                                        <option value="Smart Wall Putty">Smart Wall Putty</option>
+                                        <option value="Classic Bond">Classic Bond</option>
+                                        <option value="Western Gypsum Board">Western Gypsum Board</option>
+                                        <option value="Access Panels">Access Panels</option>
+                                    </select>
+                                </div>
+
                                 <div class="form-group col-lg-12 col-md-12 col-sm-12">
                                     <textarea name="message" placeholder="Your Message" required></textarea>
                                 </div>
@@ -82,14 +95,14 @@
                                 </div>
 
                                 <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                                    <button class="theme-btn btn-style-three" type="submit"
-                                        name="submitformcontact">Submit</button>
+                                    <button class="theme-btn btn-style-three" type="submit" name="submitformcontact">Submit</button>
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
+
 
             <div class="map-column col-lg-5 col-md-12 my-5">
                 <div class="inner-column">
