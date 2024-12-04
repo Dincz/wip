@@ -3,7 +3,7 @@
 <?php
 $cellingProducts = [
 
-    ['title' => 'Gypsum Plaster', 'image' => "images/products/westernonecoat/western_bagsOneCoat3.jpg", 'link' => 'products-gypsum-plaster.php'],
+    ['title' => 'Gypsum Plaster', 'image' => "images/fav-icons/Background-images-banner.jpg-v01.jpg", 'link' => 'products-gypsum-plaster.php'],
     ['title' => 'Smart Wall Putty', 'image' => "images/products/wcsmartwallputty/putti bag.jpg", 'link' => 'products-smart-wall-putty.php'],
     ['title' => 'Classic Bond', 'image' => "images/products/westernclassicbond/Classic-bond-Small.jpg", 'link' => 'products-bond-it.php'],
     ['title' => 'Western Gypsum Board', 'image' => "images/products/westerngypsumboard.png", 'link' => 'gymsum-board.php'],
@@ -85,9 +85,10 @@ $drywallroducts = [
 
 <!-- style for product ranges -->
 <style>
-    .subTitle{
+    .subTitle {
         font-weight: 800 !important;
     }
+
     .product-card {
         position: relative;
         overflow: hidden;
@@ -142,11 +143,13 @@ $drywallroducts = [
     .product-card .see-more-btn:hover {
         background-color: #286090;
     }
+
     .img-responsive {
         min-height: 200px !important;
         width: auto !important;
     }
-    .imgoverlay{
+
+    .imgoverlay {
         position: absolute;
         height: 100%;
         width: 100%;
@@ -259,7 +262,7 @@ $drywallroducts = [
     </div>
     <h1 class="fw-bold text-center subTitle">Drywall Partition System</h1>
     <div class="row align-items-center justify-content-center">
-    <?php foreach ($drywallroducts as $product): ?>
+        <?php foreach ($drywallroducts as $product): ?>
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail position-relative">
                     <div class="imgoverlay"></div>
@@ -653,7 +656,7 @@ $drywallroducts = [
         }
     </style>
     <script>
-        window.console = window.console || function (t) { };
+        window.console = window.console || function(t) {};
     </script>
     <script>
         if (document.location.search.match(/type=embed/gi)) {
@@ -735,7 +738,7 @@ $drywallroducts = [
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js'></script>
     <script id="rendered-js">
-        $(function () {
+        $(function() {
 
             var swiper = new Swiper('.carousel-gallery1 .swiper-container', {
                 effect: 'slide',
