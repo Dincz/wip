@@ -62,32 +62,32 @@
 </style>
 
 <!-- Bnner Section -->
-<section class="banner-section-four">
+<section class="banner-section-fo pt-0 mt-0">
    <div class="banner-carousel-three owl-carousel owl-theme">
-      <div class="slide-item" style="background-image: url(images/ceiling.jpg)">
-         <div class="auto-container">
+      <!-- First slide -->
+      <div class="slide-item p-0">
+         <img src="images/ceiling.jpg" alt="Building the future" class="img-fluid">
+         <!-- <div class="auto-container">
             <div class="content-box">
                <h2>Building the future <br> Restoring the past</h2>
                <div class="text">Excellence is our custom; quality is our work.</div>
             </div>
-         </div>
+         </div> -->
       </div>
 
-      <!-- Uncomment and modify this slide -->
-      <div class="slide-item" style="background-image: url(images/mainimgaes/Main-Banner.jpg)">
+      <!-- Second slide -->
+      <div class="slide-item p-0">
+         <img src="images/mainimgaes/Main-Banner.jpg" alt="Architecture is a Visual Art" class="img-fluid ">
          <div class="auto-container">
-            <div class="content-box">
+            <!-- <div class="content-box">
                <h2>Architecture is a <br> Visual Art</h2>
                <div class="text">The buildings speak for themselves</div>
-               <!-- Optional: Uncomment if you want an "About Us" button -->
-               <!-- <div class="link-box">
-                  <a href="#" class="theme-btn btn-style-one">About Us</a>
-               </div> -->
-            </div>
+            </div> -->
          </div>
       </div>
    </div>
 </section>
+
 
 <!-- End Bnner Section -->
 <!-- About Section -->
@@ -123,7 +123,7 @@
    </div>
    <div class="services-box">
       <div class="auto-container">
-         <div class="services-carousel owl-carousel owl-theme">
+         <div class="services-carousel owl-carousel owl-theme p-0">
             <!-- Service Block -->
             <div class="service-block">
                <a href="products-western-steel.php">
@@ -399,7 +399,7 @@
 </section>
 <!--End Fun Fact Section -->
 <!-- Projects Section -->
-<section class="news-section">
+<section class="news-section pt-0">
    <div class="auto-container">
       <div class="sec-title">
          <span class="float-text">Projects</span>
@@ -535,7 +535,7 @@
 </section>
 <br>
 <!-- Team Section -->
-<section class="team-section">
+<section class="team-section p-0 m-0">
    <div class="auto-container">
       <div class="row clearfix">
          <!-- Team Block -->
@@ -552,29 +552,29 @@
             <div class="inner-box">
                <h2 style="color: black;">Founder’s Message</h2>
                <br>
-               <p style="text-align: justify;">Over more than two decades, Western Infrabuild Products LLP has
+               <p class="p-0 m-0" style="text-align: justify;">Over more than two decades, Western Infrabuild Products LLP has
                   created an enviable image in the Indian construction industry. Western Infrabuild Products LLP
                   focuses on the policy of offering exceptional quality products and services to its customers
                   through the involvement & empowerment of our faculty with the ultimate aim of customer
-                  satisfaction.<br /><br />
+                  satisfaction.<br />
                   We are focused on engaging in exceptional research, and product development. In the last few
                   years, we have taken several initiatives, like introducing new products, expanding Pan India,
                   introducing in-house material testing equipment, and reaching the peak of innovation in the
-                  industry.<br /><br />
+                  industry.<br />
                   As we carve a distinct path ahead, our major milestones are a constant source of inspiration for
-                  our team.<br /><br />
-                  Major milestones:<br /><br />
+                  our team.<br />
+                  Major milestones:<br />
                <ul>
                   <li style="list-style-type:circle;">
                      <p style="text-align: justify;">Setting up a state-of-the-art factory at Mhape, Navi
-                        Mumbai<br /><br /></p>
+                        Mumbai<br /></p>
                   </li>
                   <li style="list-style-type:circle;">
-                     <p style="text-align: justify;">Pan India Expansion<br /><br /></p>
+                     <p style="text-align: justify;">Pan India Expansion<br /></p>
                   </li>
                   <li style="list-style-type:circle;">
                      <p style="text-align: justify;">Introduction of complete range of Galvalume coated system for
-                        False Ceiling and Dry Wall<br /><br /></p>
+                        False Ceiling and Dry Wall<br /></p>
                   </li>
                </ul>
                </p>
@@ -587,12 +587,12 @@
                   Ambitious ventures are being planned in the next couple of years to keep ourselves abreast in
                   the VUCA world of innovation and disruption. Western Infrabuild Products LLP has consistently
                   produced excellent results and its work can be seen in distinguished parts of our
-                  nation.<br /><br />
+                  nation.<br />
                   We believe in continuous improvement, profitable growth, and superior customer service, thereby
                   benefiting both stakeholders and employees. I am excited to be a part of this
-                  journey.<br /><br />
+                  journey.<br />
                   In a nutshell, we believe that - "Great things are done by a series of small things brought
-                  together".<br /><br />
+                  together".<br />
                   We are constantly innovating and never standstill.
                </p>
                <br>
@@ -662,87 +662,167 @@
          </section> -->
 <!--End Testimonial Section -->
 <!--Clients Section-->
-<!--   <section class="clients-section">
-         <div class="inner-container">
+<section class="clients-section">
+        <div class="inner-container">
             <h2 style="color: black;text-align: center;">Some of our Esteemed Clients</h2>
+            <br>
             <div class="sponsors-outer">
                 <ul class="logogrid">
-         <li class="logogrid__item">
-         <img src="images/clients/amnora.png" class="logogrid__img" alt="clients">
-         </li>
-         <li class="logogrid__item">
-         <img src="images/clients/db-reality.png" class="logogrid__img" alt="clients">
-         </li>
-         <li class="logogrid__item">
-         <img src="images/clients/Dosti.png" class="logogrid__img" alt="clients">
-         </li>
-         <li class="logogrid__item">
-         <img src="images/clients/Ekta-World.png" class="logogrid__img" alt="clients">
-         </li>
-         <li class="logogrid__item">
-         <img src="images/clients/four-seasons.png" class="logogrid__img" alt="clients">
-         </li>
-         <li class="logogrid__item">
-         <img src="images/clients/Gammon-Builders.png" class="logogrid__img" alt="clients">
-         </li>
-         <li class="logogrid__item">
-         <img src="images/clients/Godrej.png" class="logogrid__img" alt="clients">
-         </li>
-         <li class="logogrid__item">
-         <img src="images/clients/HDIL.png" class="logogrid__img" alt="clients">
-         </li>
-         <li class="logogrid__item">
-         <img src="images/clients/Indiabulls.png" class="logogrid__img" alt="clients">
-         </li>
-         <li class="logogrid__item">
-         <img src="images/clients/Kohinoor.png" class="logogrid__img" alt="clients">
-         </li>
-         <li class="logogrid__item">
-         <img src="images/clients/L&T-Construction.png" class="logogrid__img" alt="clients">
-         </li>
-         <li class="logogrid__item">
-         <img src="images/clients/Mahindra-Lifespaces.png" class="logogrid__img" alt="clients">
-         </li>
-         
-         <li class="logogrid__item">
-         <img src="images/clients/phoenix-market-city.png" class="logogrid__img" alt="clients">
-         </li>
-         <li class="logogrid__item">
-         <img src="images/clients/Rajesh-Lifespaces.png" class="logogrid__img" alt="clients">
-         </li>
-         <li class="logogrid__item">
-         <img src="images/clients/Reliance.png" class="logogrid__img" alt="clients">
-         </li>
-         <li class="logogrid__item">
-         <img src="images/clients/RNA-CORP.png" class="logogrid__img" alt="clients">
-         </li>
-         <li class="logogrid__item">
-         <img src="images/clients/Runawal.png" class="logogrid__img" alt="clients">
-         </li>
-         <li class="logogrid__item">
-         <img src="images/clients/Runawal-Green.png" class="logogrid__img" alt="clients">
-         </li>
-         <li class="logogrid__item">
-         <img src="images/clients/Sayaji.png" class="logogrid__img" alt="clients">
-         </li>
-         <li class="logogrid__item">
-         <img src="images/clients/Tata-Housing.png" class="logogrid__img" alt="clients">
-         </li>
-         <li class="logogrid__item">
-         <img src="images/clients/Volkswagon.png" class="logogrid__img" alt="clients">
-         </li>
-         
-         </ul>
-         <br>
-                
-                </div>
-                </div>
-                </section> -->
-<section class="clients-section">
+                    <li class="logogrid__item">
+                        <img src="images/clients/adani.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/bombayrealty.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/cidco.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/dypatilhospital.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/essell.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/hiranandani.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/ies.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/itchotel.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/kanakia.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/kcorp.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/lntrealty.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/lodha.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/mahada.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/markspancer.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/marriot.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/mgmhospital.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/nimims.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/novotel.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/nsdc.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/pantaloons.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/raddison.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/rahejaunivrsal.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/rustomjee.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/saprjipallonji.png" class="logogrid__img" alt="clients">
+                    </li>
+
+                    <li class="logogrid__item">
+                        <img src="images/clients/sethcreators.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/suntek.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/wdhwagroup.png" class="logogrid__img" alt="clients">
+                    </li>
+
+
+                    <li class="logogrid__item">
+                        <img src="images/clients/amnora.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/db-reality.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/Dosti.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/Ekta-World.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/four-seasons.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/Gammon-Builders.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/Godrej.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/HDIL.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/Indiabulls.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/Kohinoor.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/L&T-Construction.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/Mahindra-Lifespaces.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/phoenix-market-city.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/Seth-Group.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/Reliance.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/RNA-CORP.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/Runawal.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/Runawal-Green.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/Sayaji.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/Tata-Housing.png" class="logogrid__img" alt="clients">
+                    </li>
+                    <li class="logogrid__item">
+                        <img src="images/clients/Volkswagon.png" class="logogrid__img" alt="clients">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+<!-- <section class="clients-section">
    <div class="inner-container">
       <h2 style="color: black;text-align: center;">Some of our Esteemed Clients</h2>
       <div class="sponsors-outer">
-         <!--Sponsors Carousel-->
          <ul class="sponsors-carousel owl-carousel owl-theme">
             <li class="slide-item">
                <figure class="image-box"><img src="images/clients/adani.png" alt=""></figure>
@@ -892,7 +972,7 @@
       </div>
    </div>
 
-</section>
+</section> -->
 
 
 <!--End Clients Section-->

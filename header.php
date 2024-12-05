@@ -317,8 +317,9 @@
                                     <li class="dropdown"><a href="products-western-steel.php" onclick="window.location='productCategory.php'" ;>Products</a>
                                         <ul>
                                             <li>
+
                                             <li class="dropdown">
-                                                <a>False Ceiling & Dry Wall System</a>
+                                                <a href="products-western-steel.php" onclick="window.location='falseceiling.php'" ;>False Ceiling & Dry Wall System</a>
                                                 <ul>
                                                     <li><a href="products-western-steel.php">Western Steel (GI)</a></li>
                                                     <li><a href="products-western-galvalume.php">Western Galvalume</a></li>

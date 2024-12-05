@@ -5,7 +5,7 @@
 
    .floatButons {
       position: fixed;
-      bottom: 40%;
+      bottom: 35%;
       right: -135px;
       z-index: 111;
       transform: rotate(270deg);
@@ -23,7 +23,7 @@
          right: 0px !important;
          z-index: 111;
          transform: rotate(0deg) !important;
-         display: flex;
+         display:inline-table;
       }
       .floatButons .btn {
       letter-spacing: 0px !important; 
@@ -35,8 +35,8 @@
 
 <div class="floatButons ">
 
-   <button class="btn btn-primary rounded-0 fw-semibold lh-1">Get in touch</button>
-   <button class="btn btn-primary rounded-0 fw-semibold lh-1">Download Brochure</button>
+   <a href="contact.php"><button class="btn btn-primary rounded-0 fw-semibold lh-1">Get in touch</button></a>
+   <a href="dummy-file.pdf" download="Brochure.pdf"><button class="btn btn-primary rounded-0 fw-semibold lh-1">Download Brochure</button></a>
 
 </div>
 

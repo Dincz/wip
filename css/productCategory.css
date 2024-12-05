@@ -1,0 +1,313 @@
+/* <!-- ABout us style --> */
+
+.thumbnail {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail img {
+  transition: transform 0.3s ease;
+}
+
+.thumbnail:hover img {
+  transform: scale(1.1);
+}
+/* .thumbnail:hover .imgoverlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: black;
+    opacity: 0.3;
+    z-index: 99;
+  
+} */
+
+.caption {
+  padding: 15px;
+}
+
+.product-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+  color: white;
+  z-index: 999;
+
+}
+
+.thumbnail:hover .product-title {
+  color: white;
+}
+
+.about-us-section {
+  padding: 80px 0;
+}
+
+.about-us-content {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.about-us-title {
+  background-color: #456df1;
+  color: #ffffff;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.caption{
+    z-index: 999;
+}
+
+.about-us-description {
+  color: #333;
+  line-height: 1.8;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.leadership-highlight {
+  font-style: italic;
+  color: #555;
+  font-size: 20px;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border-left: 4px solid #456df1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-us-section {
+    padding: 40px 0;
+  }
+
+  .about-us-title {
+    padding: 15px;
+    font-size: 24px;
+  }
+
+  .about-us-description {
+    font-size: 16px;
+  }
+
+  .leadership-highlight {
+    font-size: 16px;
+  }
+
+  .mobile-padding {
+    padding: 0px 4px 0px;
+  }
+}
+
+/* <!-- Abourt us styles ends --> */
+
+/* <!-- style for product ranges --> */
+.subTitle {
+  font-weight: 800 !important;
+}
+
+.product-card {
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.product-card .card-image {
+  width: 100%;
+  height: 270px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .card-image {
+  transform: scale(1.1);
+}
+
+.product-card .card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.product-card:hover .card-overlay {
+  height: 100%;
+}
+
+.product-card .card-text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.product-card .see-more-btn {
+  margin-top: 15px;
+  background-color: #337ab7;
+  color: white;
+  border: none;
+}
+
+.product-card .see-more-btn:hover {
+  background-color: #286090;
+}
+
+.img-responsive {
+  min-height: 200px !important;
+  width: auto !important;
+}
+
+.nav-tabs{
+  width: 100vw;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+
+}
+.nav-tabs::-webkit-scrollbar {
+  display: none;
+}
+.nav-tabs .nav-item{
+  min-width:fit-content !important;
+  margin-bottom:0 !important;
+}
+
+.imgoverlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-color: black;
+  opacity: 0.3;
+  z-index: 99;
+
+}
+
+/*Carousel Gallery*/
+.carousel-gallery1 {
+  margin: 50px 0;
+  padding: 0 90px;
+}
+
+.carousel-gallery1 .swiper-slide a {
+  display: block;
+  width: 100%;
+  height: 390px;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-gallery1 .swiper-slide a:hover .image .overlay {
+  opacity: 1;
+}
+
+.carousel-gallery1 .swiper-slide a .image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.carousel-gallery1 .swiper-slide a .image .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 20, 20, 0.8);
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.carousel-gallery1 .swiper-slide a .image .overlay em {
+  color: #fff;
+  font-size: 26px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  display: inline-block;
+}
+
+.carousel-gallery1 .swiper-pagination {
+  position: relative;
+  bottom: auto;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.carousel-gallery1 .swiper-pagination .swiper-pagination-bullet {
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.carousel-gallery1 .swiper-pagination .swiper-pagination-bullet:hover {
+  opacity: 0.7;
+}
+
+.carousel-gallery1
+  .swiper-pagination
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #17174f;
+  transform: scale(1.1, 1.1);
+}
+
+/*# Carousel Gallery*/
+.plugins {
+  text-align: center;
+}
+
+.plugins h3 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  text-transform: uppercase;
+  color: #111;
+}
+
+.plugins a {
+  display: inline-block;
+  font-family: Arial;
+  color: #777;
+  font-size: 14px;
+  margin: 10px;
+  transition: all 0.2s linear;
+}
+
+.plugins a:hover {
+  color: #d63031;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .carousel-gallery1 .swiper-slide a .image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 350px;
+  }
+}

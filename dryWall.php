@@ -1,5 +1,88 @@
 <?php include 'header.php'; ?>
+<?php
 
+$Products = [
+    [
+        'title' => 'Floor and Ceiling Section',
+        'image' => "images/products/floorceilingchannel-gi/floor&ceilingchannel.jpg",
+        'Features' => 'YS-240 MPa, Finish-Galvanised (Zn 120 gsm)',
+        'link' => 'products-floor-ceiling-section.php',
+        'Advantages' => 'Designed for securing wall studs at floor and ceiling junctions. Fixed to the floor and ceiling to accommodate Western Steel Studs. Available in multiple dimensions for different installation requirements.',
+        'Dimensions' => [
+            '50X32X32X0.55X3660' => '50mm x 32mm x 32mm x 0.55mm x 3660mm',
+            '66X32X32X0.55X3660' => '66mm x 32mm x 32mm x 0.55mm x 3660mm',
+            '72X32X32X0.55X3660' => '72mm x 32mm x 32mm x 0.55mm x 3660mm',
+            '78X32X32X0.55X3660' => '78mm x 32mm x 32mm x 0.55mm x 3660mm',
+            '94X32X32X0.55X3660' => '94mm x 32mm x 32mm x 0.55mm x 3660mm',
+            '102X32X32X0.55X3660' => '102mm x 32mm x 32mm x 0.55mm x 3660mm',
+            '127X32X32X0.55X3660' => '127mm x 32mm x 32mm x 0.55mm x 3660mm',
+            '152X32X32X0.55X3660' => '152mm x 32mm x 32mm x 0.55mm x 3660mm',
+        ],
+    ],
+
+    [
+        'title' => 'C Stud',
+        'image' => "images/products/c-stud-gi/cstud.jpg",
+        'Features' => 'YS-240 MPa, Finish-Galvanised (Zn 120 gsm)',
+        'link' => 'products-c-stud.php',
+        'Advantages' => 'Used as the vertical support in wall framing. Available in multiple sizes for flexibility in various constructions.',
+        'Dimensions' => [
+            '48X34X36X0.55X3660' => '48mm x 34mm x 36mm x 0.55mm x 3660mm',
+            '64X34X36X0.55X3660' => '64mm x 34mm x 36mm x 0.55mm x 3660mm',
+            '70X34X36X0.55X3660' => '70mm x 34mm x 36mm x 0.55mm x 3660mm',
+            '76X34X36X0.55X3660' => '76mm x 34mm x 36mm x 0.55mm x 3660mm',
+            '92X34X36X0.55X3660' => '92mm x 34mm x 36mm x 0.55mm x 3660mm',
+            '100X34X36X0.55X3660' => '100mm x 34mm x 36mm x 0.55mm x 3660mm',
+            '125X34X36X0.55X3660' => '125mm x 34mm x 36mm x 0.55mm x 3660mm',
+            '150X34X36X0.55X3660' => '150mm x 34mm x 36mm x 0.55mm x 3660mm',
+        ],
+    ],
+
+    [
+        'title' => 'Noggin Channel',
+        'image' => "images/products/noggingchannel-gi/noggingchannel.jpg",
+        'link' => 'products-noggin-channel.php',
+        'Advantages' => 'Designed for horizontal support between C-studs, helping with electrical switch fitting, fire-rated partitions, and preventing the spread of fires.',
+        'Dimensions' => [
+            '48X40X0.55X492/695' => '48mm x 40mm x 0.55mm x 492mm/695mm',
+            '64X40X0.55X492/695' => '64mm x 40mm x 0.55mm x 492mm/695mm',
+            '70X40X0.55X492/695' => '70mm x 40mm x 0.55mm x 492mm/695mm',
+            '92X40X0.55X492/695' => '92mm x 40mm x 0.55mm x 492mm/695mm',
+            '100X40X0.55X492/695' => '100mm x 40mm x 0.55mm x 492mm/695mm',
+            '125X40X0.55X492/695' => '125mm x 40mm x 0.55mm x 492mm/695mm',
+            '150X40X0.55X492/695' => '150mm x 40mm x 0.55mm x 492mm/695mm',
+        ],
+    ],
+
+    [
+        'title' => 'DHT',
+        'image' => "images/products/dht/dht.jpg",
+        'Features' => 'YS-240 MPa, Finish-Galvanised (Zn 120 gsm)',
+        'link' => 'products-dht.php',
+        'Advantages' => 'Designed for securing wall studs and ceiling junctions. Fixed to the ceiling to accommodate Western Steel Studs.',
+        'Dimensions' => [
+            '50X50X50X0.70X3660' => '50mm x 50mm x 50mm x 0.70mm x 3660mm',
+            '66X50X50X0.70X3660' => '66mm x 50mm x 50mm x 0.70mm x 3660mm',
+            '72X50X50X0.70X3660' => '72mm x 50mm x 50mm x 0.70mm x 3660mm',
+            '94X50X50X0.70X3660' => '94mm x 50mm x 50mm x 0.70mm x 3660mm',
+            '102X50X50X0.70X3660' => '102mm x 50mm x 50mm x 0.70mm x 3660mm',
+            '127X50X50X0.70X3660' => '127mm x 50mm x 50mm x 0.70mm x 3660mm',
+            '152X50X50X0.70X3660' => '152mm x 50mm x 50mm x 0.70mm x 3660mm',
+        ],
+    ],
+
+    [
+        'title' => 'Fixing Channel',
+        'image' => "images/products/fixingchannel/fixing-channel.jpg",
+        'Features' => 'YS-240 MPa, Finish-Galvanised (Zn 120 gsm)',
+        'link' => 'products-fixing-channel.php',
+        'Advantages' => 'Designed for cross bracing for twin frames and fixing of heavy-weight fittings.',
+        'Dimensions' => [
+            '99X10X10X0.90X3660' => '99mm x 10mm x 10mm x 0.90mm x 3660mm',
+        ],
+    ],
+];
+?>
 
 <head>
     <meta charset="UTF-8">
@@ -10,148 +93,120 @@
 
 
 </head>
+<style>
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
+        background-color: transparent !important;
+        border: 1px solid black !important;
+        border-radius: 5px;
+        color: black !important;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
 
+    .nav-tabs .nav-link {
+        background-color: black !important;
+        color: white !important;
+        border-radius: 5px;
+    }
+</style>
 
-<?php
-$Products = [
-    // ['title' => 'Western Steel [GI]', 'image' => "images/products/ceilingsection-gi/cielingsection.jpg", 'link' => 'products-western-steel.php'],
-    // ['title' => 'Western Galvalume', 'image' => "images/products/Untitled design (3).png", 'link' => 'products-western-galvalume.php'],
-    // ['title' => 'Western Frame [GI]', 'image' => "images/products/intermediatechannel-wf/_T6A0290.jpg", 'link' => 'products-western-frame.php'],
-    // ['title' => 'Accessories', 'image' => "images/products/sofitcleat/T6A036901.jpg", 'link' => 'products-accessories.php'],
-    
-    ['title' => 'False Ceiling System', 'image' => "images/products/westerngypsumboard.png", 'link' => 'falseceiling.php'],
-    ['title' => 'Dry Wall System', 'image' => "images/products/westerngypsumboard.png", 'link' => 'dryWall.php'],
-    ['title' => 'Gypsum Board', 'image' => "images/products/Background-images-banner.jpg-06.jpg", 'link' => 'gymsum-board.php'],
-    ['title' => 'Gypsum Plaster', 'image' => "images/products/Background-images-banner.jpg-05.jpg", 'link' => 'products-gypsum-plaster.php'],
-    ['title' => 'Smart Wall Putty', 'image' => "images/products/wcsmartwallputty/putti bag.jpg", 'link' => 'products-smart-wall-putty.php'],
-    ['title' => 'Classic Bond', 'image' => "images/products/Background-images-banner.jpg-V04 (1).jpg", 'link' => 'products-bond-it.php'],
-    ['title' => 'Access Panels', 'image' => "images/products/Background-images-banner.jpg-V02.jpg", 'link' => 'acessplane.php'],
-    ['title' => 'T-Grid', 'image' => "images/products/Background-images-banner.jpg-V04 (1).jpg", 'link' => 'tgrid.php'],
-    
-];
-?>
-
-
-<!-- style for product range -->
-<!-- Banner Section -->
-<section class="banner-section-four">
-    <div class="banner-carousel-three owl-carousel owl-theme">
-        <div class="slide-item" style="background-image: url(images/banner/product-page-banner.jpg)">
-            <div class="auto-container">
-                <div class="content-box">
-                    <div class="text" style="visibility:hidden;">Excellence is our custom; quality is our work.</div>
-                </div>
+<div>
+    <section class="banner-section-four pb-5">
+        <div class="">
+            <div class="item p-0">
+                <img src="images/banner/Western-Ceiling-V-4.jpg" alt="err" class="w-100 h-100">
+                <!-- <div class="auto-container">
+                    <div class="content-box">
+                        <div class="text" style="visibility:hidden;">Excellence is our custom; quality is our work.</div>
+                    </div>
+                </div> -->
             </div>
         </div>
+        <div class="overviewSection my-5 text-center">
+            <h1 class="fw-bold">Overview</h1>
+            <div class="w-75 mx-auto">Western Infrabuild's <strong>Drywall partition systems</strong>offer a versatile and efficient solution for creating functional spaces in residential, commercial, and industrial settings. Designed for quick and hassle-free installation, these systems provide superior performance in terms of durability, sound insulation, and fire resistance.</div>
+        </div>
+        <div>
+            <!-- <h3 class="fw-bold text-center">FALSE CEILING SYSTEMS</h3> -->
+            <!-- Start Tabs Navigation -->
+            <ul class="nav nav-tabs d-flex justify-content-around my-5 border-0" id="productTabs" role="tablist">
+                <?php foreach ($Products as $index => $product): ?>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link <?= $index === 0 ? 'active ' : '' ?>" id="tab-<?= $index ?>" data-bs-toggle="tab" href="#product-<?= $index ?>" role="tab" aria-controls="product-<?= $index ?>" aria-selected="<?= $index === 0 ? 'true' : 'false' ?>">
+                            <?= $product['title'] ?>
+                        </a>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
 
-    </div>
+            <!-- Start Tabs Content -->
+            <div class="tab-content" id="productTabsContent">
+                <?php foreach ($Products as $index => $product): ?>
+                    <div class="tab-pane <?= $index === 0 ? 'show active' : '' ?>" id="product-<?= $index ?>" role="tabpanel" aria-labelledby="tab-<?= $index ?>">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!-- Product Image -->
+                                <img src="<?= $product['image'] ?>" alt="<?= $product['title'] ?>" class="img-fluid">
+                            </div>
+                            <div class="col-md-6">
+                                <!-- Product Descriptions -->
+                                <h3 class="fw-bold"><?= $product['title'] ?>
+                                    <?php if (isset($product['Features']) && !empty($product['Features'])): ?>
+                                        {<span><?= $product['Features'] ?></span>}
+                                    <?php endif; ?>
+                                </h3>
+
+                                <div>
+                                    <?php if (isset($product['Advantages']) && !empty($product['Advantages'])): ?>
+                                        <p><strong>Advantages:</strong></p>
+                                        <ul style="list-style-type:disc; padding-left: 20px;">
+                                            <?php
+                                            $advantages = explode("\n", $product['Advantages']);
+                                            foreach ($advantages as $advantage) {
+                                                echo "<li  style='list-style-type:disc'>" . trim($advantage) . "</li>";
+                                            }
+                                            ?>
+                                        </ul>
+                                    <?php endif; ?>
+
+                                    <?php if (isset($product['Features']) && !empty($product['Features'])): ?>
+                                        <p><strong>Features:</strong></p>
+                                        <ul style="list-style-type:disc; padding-left: 20px;">
+                                            <?php
+                                            $features = explode("\n", $product['Features']);
+                                            foreach ($features as $feature) {
+                                                echo "<li style='list-style-type:disc'>" . trim($feature) . "</li>";
+                                            }
+                                            ?>
+                                        </ul>
+                                    <?php endif; ?>
+
+                                    <?php if (isset($product['Dimensions']) && !empty($product['Dimensions'])): ?>
+                                        <p><strong>Dimensions:</strong></p>
+                                        <ul style="list-style-type:disc; padding-left: 20px;">
+                                            <?php
+                                            foreach ($product['Dimensions'] as $key => $dimension) {
+                                                echo "<li style='list-style-type:disc'>" . $dimension . "</li>";
+                                            }
+                                            ?>
+                                        </ul>
+                                    <?php endif; ?>
+                                </div>
+
+                                <div class="d-flex gap-2">
+                                    <p><a href="3" class="btn btn-primary rounded-0">Enquire Now <i class="px-1 fa fa-chevron-right" aria-hidden="true"></i></a></p>
+                                    <?php if (!empty($product['knowMoreLink'])): ?>
+                                        <p><a href="<?= $product['knowMoreLink'] ?>" class="btn btn-primary rounded-0 mx-4">Know More <i class="px-1 fa fa-chevron-right" aria-hidden="true"></i></a></p>
+                                    <?php endif; ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+</div>
 </section>
-<!-- About us section -->
-<div class="container-fluid">
-    <section class="about-us-section py-2">
-        <div class="container">
-            <div class="row ">
-                <div class="col-md-12">
-                    <div class="about-us-content">
-                        <h2 class="about-us-title">About Western Infrabuild Products LLP</h2>
-                        <p class="about-us-description">
-                            Western Infrabuild Products LLP was incepted under the inspiring leadership of Mr. Ashfaque
-                            Z Khan with the vision of revolutionizing interior industry by providing high quality but
-                            cost-effective products. True to its vision, Western Infrabuild Products LLP has achieved
-                            many milestones in the interior designing industry by constantly and actively innovating its
-                            offerings to fulfill customer needs.
-                        </p>
-                        <div class="leadership-highlight">
-                            Led by the visionary Mr. Ashfaque Z Khan
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
-<!-- pc range -->
-<!-- <div class="container">
-    <h2 class="text-center">Our Product Range</h2>
-    <div class="row ">
-        <div class="col-md-6">
-            <div class="product-card card">
-                <div class="card-image"
-                    style="background-image: url('images/productbanner/new/falseceilingthumb.jpg');">
-                    <div class="card-overlay">
-                        <div class="card-text">
-                            <h3>False Ceiling systems</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-body text-center">
-                    <button class="btn see-more-btn">See More</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6">
-            <div class="product-card card">
-                <div class="card-image"
-                    style="background-image: url('images/productbanner/new/drywallpartitions.jpg');">
-                    <div class="card-overlay">
-                        <div class="card-text">
-                            <h3>Drywall Partition systems</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-body text-center">
-                    <button class="btn see-more-btn">See More</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-
-<!-- pc range end -->
-<!-- Product Section -->
-<div class="container py-5">
-    <h1 class="text-center text-uppercase fw-bold pb-5" >
-        <span>Our Product Range</span>
-    </h1>
-    <!-- <h2 class="fw-bold text-center subTitle">False Ceiling Systems</h2> -->
-    <div class="row align-items-center justify-content-center pb-5">
-        <?php foreach ($Products as $product): ?>
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail position-relative">
-                    <div class="imgoverlay"></div>
-                    <img src="<?= $product['image'] ?>" alt="<?= $product['title'] ?>" class="img-responsive ">
-                    <div class="caption text-left position-absolute" style="top:60%">
-                        <h4 class="m-0 product-title"><?= $product['title'] ?></h4>
-                        <p>
-                            <a href="<?= $product['link'] ?>" class="m-0 btn btn-primary rounded-0 text-left " role="button">Know More <i class="px-1 fa fa-chevron-right" aria-hidden="true"></i>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        <?php endforeach; ?>
-    </div>
-    <!-- <h1 class="fw-bold text-center subTitle">Drywall Partition Systems</h1> -->
-    <!-- <div class="row align-items-center justify-content-center">
-        <?php foreach ($drywallroducts as $product): ?>
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail position-relative">
-                    <div class="imgoverlay"></div>
-                    <img src="<?= $product['image'] ?>" alt="<?= $product['title'] ?>" class="img-responsive ">
-                    <div class=" caption text-left position-absolute" style="top:60%">
-                        <h4 class="m-0 product-title" style="color:white"><?= $product['title'] ?></h4>
-                        <p>
-                            <a href="<?= $product['link'] ?>" class="m-0 btn btn-primary rounded-0 text-left " role="button">Know More <i class="px-1 fa fa-chevron-right" aria-hidden="true"></i>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        <?php endforeach; ?>
-    </div> -->
-</div>
-<!-- WHy -->
 <section class="process-section" style="background-image: url(images/background/quality.jpg); margin-bottom: 20px">
     <div class="auto-container">
         <div class="sec-title light">
@@ -229,8 +284,7 @@ $Products = [
         </div>
     </div>
 </section>
-<!-- WHy end -->
-<!-- some of our clients -->
+
 <section class="clients-section">
     <div class="inner-container">
         <h2 style="color: black;text-align: center;">Some of our Esteemed Clients</h2>
@@ -389,8 +443,6 @@ $Products = [
     </div>
 </section>
 
-<!-- end clients -->
-
 <!-- Pan India Section -->
 <section class="section">
     <div class="auto-container ">
@@ -476,17 +528,9 @@ $Products = [
         </div>
     </div>
     <!--#Carousel Gallery-->
+    </div>
 
-
-    <script>
-        window.console = window.console || function(t) {};
-    </script>
-    <script>
-        if (document.location.search.match(/type=embed/gi)) {
-            window.parent.postMessage("resize", "*");
-        }
-    </script>
-
+    <?php include 'page-footer.php'; ?>
 
     <script
         src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
@@ -536,15 +580,6 @@ $Products = [
         });
         //# sourceURL=pen.js
     </script>
-    <script
-        src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-e03f509ba0a671350b4b363ff105b2eb009850f34a2b4deaadaa63ed5d970b37.js">
-    </script>
 
-    <!--Just s[pacing ] -->
-    <div class="container mb-150">
-        <p style="visibility: hidden;">SOMETIHGN</p>
-    </div>
-    <!-- Youtube section ends -->
-    <?php include 'page-footer.php'; ?>
-
-  
+    <!-- Include Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
