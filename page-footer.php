@@ -55,14 +55,16 @@
    .sec-title h2 {
       margin-top: 0;
    }
+   .sec-title {
+      margin-bottom: 0 !important;
+   }
 </style>
 <!-- Main Footer -->
 
 <div class="floatButons ">
 
-   <a href="contact.php"><button class="btn btn-primary rounded-0 fw-semibold lh-1">Get in touch</button></a>
-   <a href="dummy-file.pdf" download="Brochure.pdf"><button class="btn btn-primary rounded-0 fw-semibold lh-1">Download Brochure</button></a>
-
+<button class="btn btn-primary rounded-0 fw-semibold lh-1" data-toggle="modal" data-target="#contactModal">Get in touch</button>
+<button class="btn btn-primary rounded-0 fw-semibold lh-1" onclick="downloadPDF()">Download Brochure</button>
 </div>
 <footer class="main-footer" style="background-image: url(images/background/5.jpg);">
    <div class="auto-container">
@@ -267,7 +269,7 @@
    <div class="modal-dialog" role="document">
       <div class="modal-content">
          <div class="modal-header">
-            <div class="sec-title">
+            <div class="sec-title" style="margin-bottom:0">
                <h2 id="contactModalLabel">Contact Us</h2>
             </div>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
