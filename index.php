@@ -30,7 +30,7 @@
    .leadership-highlight {
       font-style: italic;
       color: #555;
-      font-size: 20px;
+      font-size: 21px;
       padding: 15px;
       background-color: #f0f0f0;
       border-left: 4px solid #456df1;
@@ -59,6 +59,76 @@
          padding: 0px 4px 0px;
       }
    }
+/* FrOm Founder’s Message font sizing */
+
+   @media only screen and (max-width: 600px) {
+      .mobile-textSize {
+         font-size: 16px;
+      }
+   }
+   @media only screen and (min-width: 600px) {
+      .desk-no-margin {
+         margin-top: 0px;
+         margin-bottom: 5px;
+
+      }
+   }
+
+/* For desktop */
+   .mobile-textSize {
+         font-size: 15px;
+         margin-bottom: 2px;
+      }
+
+   /* Caption BOx On hover effect */
+   .caption-box {
+  background-color: #f5f5f5; /* Initial background color */
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.3s ease; /* Smooth transition */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Initial shadow */
+}
+
+.caption-box h3 {
+  margin: 0;
+  font-size: 1.5em;
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth scaling and color change */
+}
+
+.caption-box a {
+  color: #333; /* Initial link color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.caption-box:hover {
+  background-color: #007bff; /* Change background color on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add more shadow */
+  color:red;
+}
+
+.caption-box:hover h3 {
+  transform: scale(1.1); /* Scale up the text */
+  color: #fff; /* Change text color */
+}
+
+.caption-box:hover a {
+  color: #fff; /* Change link color */
+}
+
+@media only screen and (max-width: 600px) {
+      .mobile-text {
+         display: none;
+      }
+   }
+
+   @media only screen and (max-width: 768px) {
+    .owl-nav {
+        display: none;
+    }
+}
+
 </style>
 
 <!-- Bnner Section -->
@@ -78,6 +148,24 @@
       <!-- Second slide -->
       <div class="slide-item p-0">
          <img src="images/mainimgaes/Main-Banner.jpg" alt="Architecture is a Visual Art" class="img-fluid ">
+         <div class="auto-container">
+            <!-- <div class="content-box">
+               <h2>Architecture is a <br> Visual Art</h2>
+               <div class="text">The buildings speak for themselves</div>
+            </div> -->
+         </div>
+      </div>
+      <div class="slide-item p-0">
+         <img src="images/banner/product-page-banner.jpg" alt="Architecture is a Visual Art" class="img-fluid ">
+         <div class="auto-container">
+            <!-- <div class="content-box">
+               <h2>Architecture is a <br> Visual Art</h2>
+               <div class="text">The buildings speak for themselves</div>
+            </div> -->
+         </div>
+      </div>
+      <div class="slide-item p-0">
+         <img src="images/banner/drywall-banner.png" alt="Architecture is a Visual Art" class="img-fluid ">
          <div class="auto-container">
             <!-- <div class="content-box">
                <h2>Architecture is a <br> Visual Art</h2>
@@ -218,7 +306,7 @@
                <a href="products-smart-wall-putty.php">
                   <div class="inner-box">
                      <div class="image-box">
-                        <figure class="image"><img src="images/products/wcsmartwallputty/putti bag.jpg"
+                        <figure class="image"><img src="images/products/new-hp1.png"
                               alt="Smart Wall Putty"></figure>
                      </div>
                      <div class="lower-content">
@@ -236,7 +324,7 @@
                <a href="products-bond-it.php">
                   <div class="inner-box">
                      <div class="image-box">
-                        <figure class="image"><img src="images/products/westernclassicbond/Classic-bond-Small.jpg"
+                        <figure class="image"><img src="images/products/new-hp2.png"
                               alt=""></figure>
                      </div>
                      <div class="lower-content">
@@ -528,6 +616,7 @@
                <div class="caption-box">
                   <h3><a href="theatre-multiplex-projects.php">Theatre & Multiplex Projects</a></h3>
                </div>
+
             </div>
          </div>
       </div>
@@ -536,73 +625,68 @@
 <br>
 <!-- Team Section -->
 <section class="team-section p-0 m-0">
-   <div class="auto-container">
-      <div class="row clearfix">
-         <!-- Team Block -->
-         <div class="team-block col-lg-4 col-md-6 col-sm-12">
-            <div class="inner-box">
-               <div class="image-box">
-                  <div class="image"><img src="images/resource/founder.png" alt=""
-                        style="border: 1px solid #f2f2f2;"></div>
-                  <!--<h3 class="name">Mr. Ashfaque Khan</h3> -->
+   <div class="container">
+      <div class="row">
+         <!-- Image Section -->
+         <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="team-block">
+               <div class="inner-box text-center">
+                  <div class="image-box">
+                     <img src="images/resource/founder.png" class="img-responsive img-thumbnail" alt="Founder">
+                  </div>
                </div>
             </div>
          </div>
-         <div class="team-block col-lg-8 col-md-8 col-sm-12 paddingabtd1">
+         <!-- Founder Message Section -->
+         <div class="col-lg-8 col-md-6 col-sm-12">
             <div class="inner-box">
-               <h2 style="color: black;">Founder’s Message</h2>
-               <br>
-               <p class="p-0 m-0" style="text-align: justify;">Over more than two decades, Western Infrabuild Products LLP has
-                  created an enviable image in the Indian construction industry. Western Infrabuild Products LLP
-                  focuses on the policy of offering exceptional quality products and services to its customers
-                  through the involvement & empowerment of our faculty with the ultimate aim of customer
-                  satisfaction.<br />
-                  We are focused on engaging in exceptional research, and product development. In the last few
-                  years, we have taken several initiatives, like introducing new products, expanding Pan India,
-                  introducing in-house material testing equipment, and reaching the peak of innovation in the
-                  industry.<br />
-                  As we carve a distinct path ahead, our major milestones are a constant source of inspiration for
-                  our team.<br />
-                  Major milestones:<br />
-               <ul>
-                  <li style="list-style-type:circle;">
-                     <p style="text-align: justify;">Setting up a state-of-the-art factory at Mhape, Navi
-                        Mumbai<br /></p>
-                  </li>
-                  <li style="list-style-type:circle;">
-                     <p style="text-align: justify;">Pan India Expansion<br /></p>
-                  </li>
-                  <li style="list-style-type:circle;">
-                     <p style="text-align: justify;">Introduction of complete range of Galvalume coated system for
-                        False Ceiling and Dry Wall<br /></p>
-                  </li>
-               </ul>
+               <h2 class="text-primary desk-no-margin">Founder’s Message</h2>
+               <p style="text-align: justify;" class="mobile-textSize">
+                  Over more than two decades, Western Infrabuild Products LLP has created an enviable image in the 
+                  Indian construction industry. Western Infrabuild Products LLP focuses on the policy of offering exceptional 
+                  quality products and services to its customers through the involvement & empowerment of our faculty with the 
+                  ultimate aim of customer satisfaction.
                </p>
+               <p style="text-align: justify;" class="mobile-textSize">
+                  We are focused on engaging in exceptional research and product development. In the last few years, 
+                  we have taken several initiatives, like introducing new products, expanding Pan India, introducing in-house 
+                  material testing equipment, and reaching the peak of innovation in the industry.
+               </p>
+               <p style="text-align: justify mobile-textSize;">As we carve a distinct path ahead, our major milestones are a constant source of inspiration for our team.</p>
+               <h4>Major Milestones:</h4>
+               <ul class="list-unstyled">
+                  <li><i class="glyphicon glyphicon-ok"></i> Setting up a state-of-the-art factory at Mhape, Navi Mumbai</li>
+                  <li><i class="glyphicon glyphicon-ok"></i> Pan India Expansion</li>
+                  <li><i class="glyphicon glyphicon-ok"></i> Introduction of a complete range of Galvalume-coated systems for False Ceiling and Dry Wall</li>
+               </ul>
             </div>
          </div>
-         <div class="row clearfix">
-            <!-- Team Block -->
-            <div class="team-block col-lg-12 col-md-12 col-sm-12">
-               <p style="text-align: justify;" class="mobile-padding">
-                  Ambitious ventures are being planned in the next couple of years to keep ourselves abreast in
-                  the VUCA world of innovation and disruption. Western Infrabuild Products LLP has consistently
-                  produced excellent results and its work can be seen in distinguished parts of our
-                  nation.<br />
-                  We believe in continuous improvement, profitable growth, and superior customer service, thereby
-                  benefiting both stakeholders and employees. I am excited to be a part of this
-                  journey.<br />
-                  In a nutshell, we believe that - "Great things are done by a series of small things brought
-                  together".<br />
-                  We are constantly innovating and never standstill.
+      </div>
+      <div class="row">
+         <!-- Additional Message Section -->
+         <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="team-block">
+               <p style="text-align: justify; " class="mobile-padding mobile-textSize">
+                  Ambitious ventures are being planned in the next couple of years to keep ourselves abreast in the VUCA 
+                  world of innovation and disruption. Western Infrabuild Products LLP has consistently produced excellent 
+                  results, and its work can be seen in distinguished parts of our nation.
                </p>
-               <br>
-               <p><b>Mr. Ashfaque Z Khan</b></p>
+               <p style="text-align: justify; " class="mobile-padding mobile-textSize">
+                  We believe in continuous improvement, profitable growth, and superior customer service, thereby 
+                  benefiting both stakeholders and employees. I am excited to be a part of this journey.
+               </p>
+               <p style="text-align: justify; " class="mobile-padding mobile-textSize">
+                  In a nutshell, we believe that - "Great things are done by a series of small things brought together". 
+                  We are constantly innovating and never stand still.
+               </p>
+               <p><strong>Mr. Ashfaque Z Khan</strong></p>
                <p>Designated Partner</p>
             </div>
          </div>
       </div>
    </div>
 </section>
+
 <!--End Team Section -->
 <!--End Projects Section -->
 <!-- Testimonial Section -->
@@ -663,162 +747,162 @@
 <!--End Testimonial Section -->
 <!--Clients Section-->
 <section class="clients-section">
-        <div class="inner-container">
-            <h2 style="color: black;text-align: center;">Some of our Esteemed Clients</h2>
-            <br>
-            <div class="sponsors-outer">
-                <ul class="logogrid">
-                    <li class="logogrid__item">
-                        <img src="images/clients/adani.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/bombayrealty.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/cidco.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/dypatilhospital.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/essell.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/hiranandani.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/ies.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/itchotel.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/kanakia.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/kcorp.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/lntrealty.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/lodha.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/mahada.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/markspancer.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/marriot.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/mgmhospital.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/nimims.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/novotel.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/nsdc.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/pantaloons.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/raddison.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/rahejaunivrsal.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/rustomjee.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/saprjipallonji.png" class="logogrid__img" alt="clients">
-                    </li>
+   <div class="inner-container">
+      <h2 style="color: black;text-align: center;">Some of our Esteemed Clients</h2>
+      <br>
+      <div class="sponsors-outer">
+         <ul class="logogrid">
+            <li class="logogrid__item">
+               <img src="images/clients/adani.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/bombayrealty.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/cidco.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/dypatilhospital.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/essell.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/hiranandani.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/ies.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/itchotel.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/kanakia.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/kcorp.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/lntrealty.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/lodha.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/mahada.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/markspancer.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/marriot.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/mgmhospital.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/nimims.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/novotel.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/nsdc.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/pantaloons.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/raddison.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/rahejaunivrsal.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/rustomjee.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/saprjipallonji.png" class="logogrid__img" alt="clients">
+            </li>
 
-                    <li class="logogrid__item">
-                        <img src="images/clients/sethcreators.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/suntek.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/wdhwagroup.png" class="logogrid__img" alt="clients">
-                    </li>
+            <li class="logogrid__item">
+               <img src="images/clients/sethcreators.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/suntek.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/wdhwagroup.png" class="logogrid__img" alt="clients">
+            </li>
 
 
-                    <li class="logogrid__item">
-                        <img src="images/clients/amnora.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/db-reality.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/Dosti.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/Ekta-World.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/four-seasons.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/Gammon-Builders.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/Godrej.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/HDIL.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/Indiabulls.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/Kohinoor.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/L&T-Construction.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/Mahindra-Lifespaces.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/phoenix-market-city.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/Seth-Group.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/Reliance.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/RNA-CORP.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/Runawal.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/Runawal-Green.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/Sayaji.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/Tata-Housing.png" class="logogrid__img" alt="clients">
-                    </li>
-                    <li class="logogrid__item">
-                        <img src="images/clients/Volkswagon.png" class="logogrid__img" alt="clients">
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
+            <li class="logogrid__item">
+               <img src="images/clients/amnora.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/db-reality.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/Dosti.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/Ekta-World.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/four-seasons.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/Gammon-Builders.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/Godrej.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/HDIL.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/Indiabulls.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/Kohinoor.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/L&T-Construction.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/Mahindra-Lifespaces.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/phoenix-market-city.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/Seth-Group.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/Reliance.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/RNA-CORP.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/Runawal.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/Runawal-Green.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/Sayaji.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/Tata-Housing.png" class="logogrid__img" alt="clients">
+            </li>
+            <li class="logogrid__item">
+               <img src="images/clients/Volkswagon.png" class="logogrid__img" alt="clients">
+            </li>
+         </ul>
+      </div>
+   </div>
+</section>
 <!-- <section class="clients-section">
    <div class="inner-container">
       <h2 style="color: black;text-align: center;">Some of our Esteemed Clients</h2>

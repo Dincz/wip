@@ -86,7 +86,7 @@ $Products = [
     }
 
     .nav-tabs .nav-link {
-        background-color: black !important;
+        background-color: blue !important;
         color: white !important;
         border-radius: 5px;
     }
