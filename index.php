@@ -288,7 +288,7 @@
                <a href="products-gypsum-plaster.php">
                   <div class="inner-box">
                      <div class="image-box">
-                        <figure class="image"><img src="images/products/westernonecoat/western_bagsOneCoat3.jpg"
+                        <figure class="image"><img src="images/products/gypsumplaster.png"
                               alt="Gypsum Plaster"></figure>
                      </div>
                      <div class="lower-content">
