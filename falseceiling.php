@@ -90,12 +90,37 @@ $Products = [
         color: white !important;
         border-radius: 5px;
     }
+
+    /* <!-- STyle for why western on hover --> */
+    .process-block .inner-box {
+        position: relative;
+        transition: all 0.3s ease;
+    }
+
+    .process-block .inner-box:hover {
+        background-color: #f7f7f7;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        transform: translateY(-10px);
+        /* Lift the block slightly */
+    }
+
+    .process-block .inner-box:hover .text {
+        color: #007bff;
+        /* Bootstrap primary blue */
+        transition: color 0.3s ease;
+    }
+
+    .process-block .inner-box:hover .count {
+        color: black;
+        /* Slightly darker blue for contrast */
+        transition: color 0.3s ease;
+    }
 </style>
 
 <div>
     <section class="py-5">
         <div class="">
-            <div class="item p-0" >
+            <div class="item p-0">
                 <img src="images/banner/Western-Ceiling-V-4.jpg" alt="err" class="w-100 h-100">
                 <!-- <div class="auto-container">
                     <div class="content-box">

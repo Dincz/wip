@@ -46,8 +46,30 @@ $Products = [
 
     </div>
 </section> -->
+<!-- STyle for why western on hover -->
+ <style>
+    .process-block .inner-box {
+    position: relative;
+    transition: all 0.3s ease;
+}
 
+.process-block .inner-box:hover {
+    background-color: #f7f7f7;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px); /* Lift the block slightly */
+}
 
+.process-block .inner-box:hover .text {
+    color: #007bff; /* Bootstrap primary blue */
+    transition: color 0.3s ease;
+}
+
+.process-block .inner-box:hover .count {
+    color: black; /* Slightly darker blue for contrast */
+    transition: color 0.3s ease;
+}
+ </style>
+<!-- Style ends -->
 <section class="banner-section-fo pt-0 mt-0">
         <div class="slide-item">
            <img src="images/banner/product-page-banner.jpg" class="img-fluid"  alt="banner">
