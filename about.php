@@ -8,6 +8,27 @@
       border: 0px solid #f2f2f2;
       border-left: 0;
    }
+/* On Hover Effects for why western */
+.process-block .inner-box {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.process-block .inner-box:hover {
+    background-color: #f7f7f7;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px); /* Lift the block slightly */
+}
+
+.process-block .inner-box:hover .text {
+    color: #007bff; /* Bootstrap primary blue */
+    transition: color 0.3s ease;
+}
+
+.process-block .inner-box:hover .count {
+    color: black; /* Slightly darker blue for contrast */
+    transition: color 0.3s ease;
+}
 </style>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-E56XGST1LX"></script>
@@ -245,6 +266,8 @@
       </div>
    </div>
 </section>
+
+
 <br><br><br><br>
 <!--End Quality Section -->
 <!-- advantage Section -->
