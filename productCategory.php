@@ -34,7 +34,7 @@ $Products = [
 
 <!-- style for product range -->
 <!-- Banner Section -->
-<section class="banner-section-four">
+<!-- <section class="banner-section-fo pt-0 mt-0">
     <div class="banner-carousel-three owl-carousel owl-theme">
         <div class="slide-item" style="background-image: url(images/banner/product-page-banner.jpg)">
             <div class="auto-container">
@@ -45,7 +45,17 @@ $Products = [
         </div>
 
     </div>
+</section> -->
+
+
+<section class="banner-section-fo pt-0 mt-0">
+        <div class="slide-item">
+           <img src="images/banner/product-page-banner.jpg" class="img-fluid"  alt="banner">
+        </div>
+
 </section>
+
+
 <!-- About us section -->
 <div class="container-fluid">
     <section class="about-us-section py-2">

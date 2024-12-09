@@ -43,8 +43,8 @@
       }
 
       .about-us-title {
-         padding: 15px;
-         font-size: 24px;
+         padding: 9px;
+         font-size: 16px;
       }
 
       .about-us-description {
@@ -748,9 +748,12 @@
 <!--Clients Section-->
 <section class="clients-section">
    <div class="inner-container">
-      <h2 style="color: black;text-align: center;">Some of our Esteemed Clients</h2>
+   <h2 style="color: #007bff; text-align: center; font-size: 2.8rem; font-weight: 600; margin: 0px 0px;">
+    Some of Our Esteemed Clients
+</h2>
+
       <br>
-      <div class="sponsors-outer">
+      <div class="sponsors-outer" style="padding-top:15px;">
          <ul class="logogrid">
             <li class="logogrid__item">
                <img src="images/clients/adani.png" class="logogrid__img" alt="clients">
