@@ -319,7 +319,7 @@
                                             <li>
 
                                             <li class="dropdown">
-                                                <a href="products-western-steel.php" onclick="window.location='falseceiling.php'" ;>False Ceiling & Dry Wall System</a>
+                                                <a href="products-western-steel.php" onclick="window.location='falseceiling.php'" ;>False Ceiling</a>
                                                 <ul>
                                                     <li><a href="products-western-steel.php">Western Steel (GI)</a></li>
                                                     <li><a href="products-western-galvalume.php">Western Galvalume</a></li>
@@ -328,6 +328,7 @@
                                                     <li><a href="products-accessories.php">Accessories</a></li>
                                                 </ul>
                                             </li>
+                                            <li><a href="dryWall.php">Drywall Partition System</a></li>
                                             <li><a href="products-gypsum-plaster.php">Gypsum Plaster</a></li>
                                             <li><a href="tgrid.php">T-grid</a></li>
 

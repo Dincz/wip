@@ -8,27 +8,57 @@
       border: 0px solid #f2f2f2;
       border-left: 0;
    }
-/* On Hover Effects for why western */
-.process-block .inner-box {
-    position: relative;
-    transition: all 0.3s ease;
-}
 
-.process-block .inner-box:hover {
-    background-color: #f7f7f7;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    transform: translateY(-10px); /* Lift the block slightly */
-}
+   /* On Hover Effects for why western */
+   .process-block .inner-box {
+      position: relative;
+      transition: all 0.3s ease;
+   }
 
-.process-block .inner-box:hover .text {
-    color: #007bff; /* Bootstrap primary blue */
-    transition: color 0.3s ease;
-}
+   .process-block .inner-box:hover {
+      background-color: #f7f7f7;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      transform: translateY(-10px);
+      /* Lift the block slightly */
+   }
 
-.process-block .inner-box:hover .count {
-    color: black; /* Slightly darker blue for contrast */
-    transition: color 0.3s ease;
-}
+   .process-block .inner-box:hover .text {
+      color: #007bff;
+      /* Bootstrap primary blue */
+      transition: color 0.3s ease;
+   }
+
+   .process-block .inner-box:hover .count {
+      color: black;
+      /* Slightly darker blue for contrast */
+      transition: color 0.3s ease;
+   }
+
+   /* Range section */
+   .left-border {
+      border-left: 10px solid gold;
+      padding-left: 5px;
+   }
+
+   .content-column {
+      padding: 4px;
+   }
+
+   @media (max-width: 576px) {
+      .content-column a {
+         font-size: 10px;
+         /* Adjust font size for better fit */
+         display: block;
+         /* Ensure proper spacing */
+         text-align: center;
+         padding: 5px 0;
+         /* Add padding for touch-friendly design */
+      }
+
+      .content-column {
+         padding: 0%;
+      }
+   }
 </style>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-E56XGST1LX"></script>
@@ -46,20 +76,13 @@
 
 <!--End Main Header -->
 <!--Page Title-->
-<section class="page-title" style="background-image:url(images/banner/Aboutus-1920x830px.jpg);">
-   <div class="auto-container">
-      <div class="inner-container clearfix">
-         <div class="title-box">
-            <h1>&nbsp;</h1>
-            <!--  <span class="title">The Interior speak for themselves</span> -->
-         </div>
-         <!--  <ul class="bread-crumb clearfix">
-                  <li><a href="index.php">Home</a></li>
-                  <li>About Us</li>
-                  </ul> -->
-      </div>
-   </div>
-</section>
+
+<div class="container-fluid p-0">
+   <img
+      src="images/banner/Aboutus-1920x830px.jpg"
+      alt="Responsive Banner"
+      class="img-fluid w-100">
+</div>
 <!--End Page Title-->
 <!-- About Section -->
 <section class="about-section abtminus" style="background-image: url(images/background/1.jpg);">
@@ -68,9 +91,9 @@
          <!-- Image Column -->
          <div class="image-column col-lg-4 col-md-12 col-sm-12">
             <div class="inner-column">
-               <div class="title-box wow abtboldtext fadeInLeft" data-wow-delay='1200ms'>
+               <!-- <div class="title-box wow abtboldtext fadeInLeft" data-wow-delay='1200ms'>
                   <h2>ABOUT <br> US</h2>
-               </div>
+               </div> -->
                <div class="image-box wow fadeInRight" data-wow-delay='600ms'>
                   <figure class="alphabet-img wpositionabout"><img src="images/mainimgaes/W.png" alt="" style="height: 170px;"></figure>
                   <figure class="image"><img src="images/mainimgaes/AboutUs-aboutPage.jpg" alt="" style="display: block;"></figure>
@@ -82,35 +105,32 @@
             <div class="inner-column wow fadeInLeft">
                <div class="content-box">
                   <div class="title">
-                     <h2>About Us</h2>
                   </div>
                   <div class="text" style="text-align: justify;">Western Infrabuild Products LLP was incepted under the inspiring leadership of Mr. Ashfaque Z Khan with the vision of revolutionizing interior industry by providing high quality but cost-effective products. True to its vision, Western Infrabuild Products LLP has achieved many milestones in the interior designing industry by constantly and actively innovating its offerings to fulfill customer needs.
                      <br /><br />Driven by the sole motto of providing unique customer experience, under the expert guidance of Mr. Ashfaque Z Khan, the organization is administered into different streams. Each stream follows the committed vision to achieve profitable growth, undergo and surpass business challenges by achieving flexibility.<br />From the time of inception, we have grown by continuously acquiring new customers and introducing customized products. Its impact is reflected in the form of delighted customers. <br /><br />
                      Our success in the interior industry is built on the edifice of a constant drive to improve, and surpass customer delight. Through the years we have built a zealous team that strives to create beautiful spaces with happy faces. At the root of our innovations is our compelling desire to constantly upgrade our knowledge, and expertise to offer customized and unique products.<br /><br />Keeping pace with changing times, our team understands customer concerns, challenges, and preferences that get incorporated in our product offerings that include:<br /><br />
-                     <div class="row no-gutters">
-
-                        <div class="content-column col-lg-6 col-md-12 col-sm-12">
-                           <a href="products-gypsum-plaster.php">GYPSUM PLASTER</a><br />
+                     <div class="row no-gutters left-border bg-light">
+                        <div class="content-column col-lg-6 col-md-6 col-sm-6 col-6">
+                           <a href="falseceiling.php">FALSE CEILING SYSTEM</a>
                         </div>
-                        <div class="content-column col-lg-6 col-md-12 col-sm-12">
-                           <a href="products-western-operable-walls.php">METAL SYSTEM FOR PARTITION</a><br />
+                        <div class="content-column col-lg-6 col-md-6 col-sm-6 col-6">
+                           <a href="tgrid.php">T-GRID</a>
                         </div>
-                        <div class="content-column col-lg-6 col-md-12 col-sm-12">
-                           <a href="products-western-frame.php">METAL SYSTEM FOR FALSE CEILING</a><br />
+                        <div class="content-column col-lg-6 col-md-6 col-sm-6 col-6">
+                           <a href="dryWall.php">DRYWALL PARTITION SYSTEM</a>
                         </div>
-                        <div class="content-column col-lg-6 col-md-12 col-sm-12">
-                           <a href="products-smart-wall-putty.php">SMART WALL PUTTY</a><br />
+                        <div class="content-column col-lg-6 col-md-6 col-sm-6 col-6">
+                           <a href="products-smart-wall-putty.php">SMART WALL PUTTY</a>
                         </div>
-                        <div class="content-column col-lg-6 col-md-12 col-sm-12">
-                           <a href="products-bond-it.php">WESTERN CLASSIC BOND</a><br />
+                        <div class="content-column col-lg-6 col-md-6 col-sm-6 col-6">
+                           <a href="gymsum-board.php">WESTERN GYPSUM BOARDS</a>
                         </div>
-                        <div class="content-column col-lg-6 col-md-12 col-sm-12">
-                           <a href="">GYPSUM BOARDS</a><br />
+                        <div class="content-column col-lg-6 col-md-6 col-sm-6 col-6">
+                           <a href="acessplane.php">Access Panels</a>
                         </div>
-                        <!--               <div class="content-column col-lg-6 col-md-12 col-sm-12">-->
-                        <!--<a href="products-flush-doors.php">FLUSH DOORS</a><br/>-->
-                        <!--</div>-->
                      </div>
+
+
                      <!-- <div class="link-box"><a href="about.html" class="theme-btn btn-style-one">About Us</a></div> -->
                   </div>
                </div>

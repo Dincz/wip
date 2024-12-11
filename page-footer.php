@@ -2,6 +2,11 @@
    .social-icon-two a {
       color: white !important;
    }
+   .btn {
+      background-color: gold;
+      color: black;
+      border: none !important;
+   }
 
    .floatButons {
       position: fixed;

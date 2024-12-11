@@ -20,7 +20,7 @@ $Products = [
     // ['title' => 'Accessories', 'image' => "images/products/sofitcleat/T6A036901.jpg", 'link' => 'products-accessories.php'],
     
     ['title' => 'False Ceiling System', 'image' => "images/products/westerngypsumboard.png", 'link' => 'falseceiling.php'],
-    ['title' => 'Dry Wall System', 'image' => "images/products/westerngypsumboard.png", 'link' => 'dryWall.php'],
+    ['title' => 'DryWall Partition System', 'image' => "images/products/westerngypsumboard.png", 'link' => 'dryWall.php'],
     ['title' => 'Gypsum Board', 'image' => "images/products/Background-images-banner.jpg-06.jpg", 'link' => 'gymsum-board.php'],
     ['title' => 'Gypsum Plaster', 'image' => "images/products/Background-images-banner.jpg-05.jpg", 'link' => 'products-gypsum-plaster.php'],
     ['title' => 'Smart Wall Putty', 'image' => "images/products/wcsmartwallputty/putti bag.jpg", 'link' => 'products-smart-wall-putty.php'],

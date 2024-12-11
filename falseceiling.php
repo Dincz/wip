@@ -115,6 +115,31 @@ $Products = [
         /* Slightly darker blue for contrast */
         transition: color 0.3s ease;
     }
+   
+
+/* Different Curve for Different Corners */
+.img-custom-curve {
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.img-custom-curve:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transform: scale(1.02);
+}
+
+
+/* Circular Crop */
+.img-circle {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
 </style>
 
 <div>
@@ -147,50 +172,61 @@ $Products = [
             </ul>
 
             <!-- Start Tabs Content -->
-            <div class="tab-content" id="productTabsContent bg-danger">
+            <div class="tab-content" id="productTabsContent">
                 <?php foreach ($Products as $index => $product): ?>
-                    <div class="tab-pane <?= $index === 0 ? 'show active' : '' ?>" id="product-<?= $index ?>" role="tabpanel" aria-labelledby="tab-<?= $index ?>">
-                        <div class="row ">
-                            <div class="col-md-6">
+                    <div class="tab-pane <?= $index === 0 ? 'show active' : '' ?> p-4" id="product-<?= $index ?>" role="tabpanel" aria-labelledby="tab-<?= $index ?>">
+                        <div class="row no-gutters shadow-sm border">
+                            <div class="col-md-6 p-3">
                                 <!-- Product Image -->
-                                <img src="<?= $product['image'] ?>" alt="<?= $product['title'] ?>" class="img-fluid">
+                                <img src="<?= $product['image'] ?>" class="img-fluid img-custom-curve" alt="Product Image">
+
                             </div>
-                            <div class="col-md-6">
-                                <!-- Product Short and Long Descriptions -->
-                                <h3 class="fw-bold"><?= $product['title'] ?></h3>
-                                <!-- <p><strong>Advantages:</strong></p> -->
-                                <ul style="list-style-type:disc; padding-left: 20px;">
-                                    <?php if (isset($product['Advantages'])): ?>
-                                        <p><strong>Advantages:</strong></p>
-                                        <ul style="list-style-type: disc; padding-left: 20px;">
+                            <div class="col-md-6 p-4 bg-light">
+                                <!-- Product Details -->
+                                <h3 class="font-weight-bold mb-3"><?= $product['title'] ?></h3>
+
+                                <?php if (isset($product['Advantages'])): ?>
+                                    <div class="mb-3">
+                                        <h5 class="text-primary">Advantages</h5>
+                                        <ul class="list-unstyled pl-3">
                                             <?php
-                                            // Split the advantages string by lines and display each as a list item
                                             $advantages = explode("\n", $product['Advantages']);
                                             foreach ($advantages as $advantage) {
-                                                echo "<li style='list-style-type: disc;'>" . trim($advantage) . "</li>";
+                                                echo "<li class='mb-2'>
+                                                        <span class='text-success mr-2'>✓</span>" .
+                                                     htmlspecialchars(trim($advantage)) . "</li>";
                                             }
                                             ?>
                                         </ul>
-                                    <?php endif; ?>
+                                    </div>
+                                <?php endif; ?>
 
-                                    <?php if (isset($product['Features'])): ?>
-                                        <p><strong>Features:</strong></p>
-                                        <ul style="list-style-type: disc; padding-left: 20px;">
+                                <?php if (isset($product['Features'])): ?>
+                                    <div class="mb-3">
+                                        <h5 class="text-primary">Features</h5>
+                                        <ul class="list-unstyled">
                                             <?php
-                                            // Split the features string by lines and display each as a list item
                                             $features = explode("\n", $product['Features']);
                                             foreach ($features as $feature) {
-                                                echo "<li style='list-style-type: disc;'>" . trim($feature) . "</li>";
+                                                echo "<li class='mb-2'><i class='text-info mr-2 fas fa-tag'></i>" .
+                                                    htmlspecialchars(trim($feature)) . "</li>";
                                             }
                                             ?>
                                         </ul>
-                                    <?php endif; ?>
-                                </ul>
-                                <div class="d-flex gap-2">
-                                    <p><a href="3" class="btn btn-primary rounded-0">Enquire Now <i class="px-1 fa fa-chevron-right" aria-hidden="true"></i></a></p>
-                                    <?php if (!empty($product['knowMoreLink'])): ?>
-                                        <p><a href="<?= $product['knowMoreLink'] ?>" class="btn btn-primary rounded-0 mx-4">Know More <i class="px-1 fa fa-chevron-right" aria-hidden="true"></i></a></p>
-                                    <?php endif; ?>
+                                    </div>
+                                <?php endif; ?>
+
+                                <div class="mt-4">
+                                    <div class="btn-group" role="group" aria-label="Product Actions">
+                                        <a href="3" class="btn btn-primary rounded-0">
+                                            ENQUIRE NOW <i class="ml-2"></i>
+                                        </a>
+                                        <?php if (!empty($product['knowMoreLink'])): ?>
+                                            <a href="<?= $product['knowMoreLink'] ?>" class="btn btn-outline-primary rounded-0 ml-2">
+                                                KNOW MORE <i class="ml-2"></i>
+                                            </a>
+                                        <?php endif; ?>
+                                    </div>
                                 </div>
                             </div>
                         </div>

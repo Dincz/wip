@@ -165,7 +165,7 @@
          </div>
       </div>
       <div class="slide-item p-0">
-         <img src="images/banner/drywall-banner.png" alt="Architecture is a Visual Art" class="img-fluid ">
+         <img src="images/banner/Drywall-partition-system-B-V04.jpg" alt="Architecture is a Visual Art" class="img-fluid ">
          <div class="auto-container">
             <!-- <div class="content-box">
                <h2>Architecture is a <br> Visual Art</h2>
