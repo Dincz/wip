@@ -59,13 +59,15 @@
          padding: 0px 4px 0px;
       }
    }
-/* FrOm Founder’s Message font sizing */
+
+   /* FrOm Founder’s Message font sizing */
 
    @media only screen and (max-width: 600px) {
       .mobile-textSize {
          font-size: 16px;
       }
    }
+
    @media only screen and (min-width: 600px) {
       .desk-no-margin {
          margin-top: 0px;
@@ -74,87 +76,95 @@
       }
    }
 
-/* For desktop */
+   /* For desktop */
    .mobile-textSize {
-         font-size: 15px;
-         margin-bottom: 2px;
-      }
+      font-size: 15px;
+      margin-bottom: 2px;
+   }
 
    /* Caption BOx On hover effect */
    .caption-box {
-  background-color: #f5f5f5; /* Initial background color */
-  padding: 15px;
-  border-radius: 5px;
-  text-align: center;
-  transition: all 0.3s ease; /* Smooth transition */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Initial shadow */
-}
+      background-color: #f5f5f5;
+      /* Initial background color */
+      padding: 15px;
+      border-radius: 5px;
+      text-align: center;
+      transition: all 0.3s ease;
+      /* Smooth transition */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      /* Initial shadow */
+   }
 
-.caption-box h3 {
-  margin: 0;
-  font-size: 1.5em;
-  transition: transform 0.3s ease, color 0.3s ease; /* Smooth scaling and color change */
-}
+   .caption-box h3 {
+      margin: 0;
+      font-size: 1.5em;
+      transition: transform 0.3s ease, color 0.3s ease;
+      /* Smooth scaling and color change */
+   }
 
-.caption-box a {
-  color: #333; /* Initial link color */
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
+   .caption-box a {
+      color: #333;
+      /* Initial link color */
+      text-decoration: none;
+      transition: color 0.3s ease;
+   }
 
-.caption-box:hover {
-  background-color: #007bff; /* Change background color on hover */
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add more shadow */
-  color:red;
-}
+   .caption-box:hover {
+      background-color: #007bff;
+      /* Change background color on hover */
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      /* Add more shadow */
+      color: red;
+   }
 
-.caption-box:hover h3 {
-  transform: scale(1.1); /* Scale up the text */
-  color: #fff; /* Change text color */
-}
+   .caption-box:hover h3 {
+      transform: scale(1.1);
+      /* Scale up the text */
+      color: #fff;
+      /* Change text color */
+   }
 
-.caption-box:hover a {
-  color: #fff; /* Change link color */
-}
+   .caption-box:hover a {
+      color: #fff;
+      /* Change link color */
+   }
 
-@media only screen and (max-width: 600px) {
+   @media only screen and (max-width: 600px) {
       .mobile-text {
          display: none;
       }
    }
 
    @media only screen and (max-width: 768px) {
-    .owl-nav {
-        display: none;
-    }
-}
-
+      .owl-nav {
+         display: none;
+      }
+   }
 </style>
 
 <!-- Bnner Section -->
 <section class="banner-section-fo pt-0 mt-0">
    <div class="banner-carousel-three owl-carousel owl-theme">
       <!-- First slide -->
-      <div class="slide-item p-0">
+      <div
+         class="slide-item p-0"
+         data-toggle="modal"
+         data-target="#contactModal"
+         style="cursor: pointer;">
          <img src="images/ceiling.jpg" alt="Building the future" class="img-fluid">
-         <!-- <div class="auto-container">
-            <div class="content-box">
-               <h2>Building the future <br> Restoring the past</h2>
-               <div class="text">Excellence is our custom; quality is our work.</div>
-            </div>
-         </div> -->
       </div>
 
+
       <!-- Second slide -->
-      <div class="slide-item p-0">
+      <!-- <div class="slide-item p-0">
          <img src="images/mainimgaes/Main-Banner.jpg" alt="Architecture is a Visual Art" class="img-fluid ">
          <div class="auto-container">
-            <!-- <div class="content-box">
+            <div class="content-box">
                <h2>Architecture is a <br> Visual Art</h2>
                <div class="text">The buildings speak for themselves</div>
-            </div> -->
+            </div>
          </div>
-      </div>
+      </div> -->
       <div class="slide-item p-0">
          <img src="images/banner/product-page-banner.jpg" alt="Architecture is a Visual Art" class="img-fluid ">
          <div class="auto-container">
@@ -164,15 +174,20 @@
             </div> -->
          </div>
       </div>
-      <div class="slide-item p-0">
-         <img src="images/banner/Drywall-partition-system-B-V04.jpg" alt="Architecture is a Visual Art" class="img-fluid ">
+      <a
+         href="javascript:void(0);"
+         class="slide-item p-0"
+         data-toggle="modal"
+         data-target="#contactModal">
+         <img src="images/banner/Drywall-partition-system-B-V04.jpg" alt="Architecture is a Visual Art" class="img-fluid">
          <div class="auto-container">
             <!-- <div class="content-box">
-               <h2>Architecture is a <br> Visual Art</h2>
-               <div class="text">The buildings speak for themselves</div>
-            </div> -->
+         <h2>Architecture is a <br> Visual Art</h2>
+         <div class="text">The buildings speak for themselves</div>
+      </div> -->
          </div>
-      </div>
+      </a>
+
    </div>
 </section>
 
@@ -306,7 +321,7 @@
                <a href="products-smart-wall-putty.php">
                   <div class="inner-box">
                      <div class="image-box">
-                        <figure class="image"><img src="images/products/new-hp1.png"
+                        <figure class="image"><img src="images/new/Product Images/Background-images-banner.jpg-v01 (2).jpg"
                               alt="Smart Wall Putty"></figure>
                      </div>
                      <div class="lower-content">
@@ -642,14 +657,14 @@
             <div class="inner-box">
                <h2 class="text-primary desk-no-margin">Founder’s Message</h2>
                <p style="text-align: justify;" class="mobile-textSize">
-                  Over more than two decades, Western Infrabuild Products LLP has created an enviable image in the 
-                  Indian construction industry. Western Infrabuild Products LLP focuses on the policy of offering exceptional 
-                  quality products and services to its customers through the involvement & empowerment of our faculty with the 
+                  Over more than two decades, Western Infrabuild Products LLP has created an enviable image in the
+                  Indian construction industry. Western Infrabuild Products LLP focuses on the policy of offering exceptional
+                  quality products and services to its customers through the involvement & empowerment of our faculty with the
                   ultimate aim of customer satisfaction.
                </p>
                <p style="text-align: justify;" class="mobile-textSize">
-                  We are focused on engaging in exceptional research and product development. In the last few years, 
-                  we have taken several initiatives, like introducing new products, expanding Pan India, introducing in-house 
+                  We are focused on engaging in exceptional research and product development. In the last few years,
+                  we have taken several initiatives, like introducing new products, expanding Pan India, introducing in-house
                   material testing equipment, and reaching the peak of innovation in the industry.
                </p>
                <p style="text-align: justify mobile-textSize;">As we carve a distinct path ahead, our major milestones are a constant source of inspiration for our team.</p>
@@ -667,16 +682,16 @@
          <div class="col-lg-12 col-md-12 col-sm-12">
             <div class="team-block">
                <p style="text-align: justify; " class="mobile-padding mobile-textSize">
-                  Ambitious ventures are being planned in the next couple of years to keep ourselves abreast in the VUCA 
-                  world of innovation and disruption. Western Infrabuild Products LLP has consistently produced excellent 
+                  Ambitious ventures are being planned in the next couple of years to keep ourselves abreast in the VUCA
+                  world of innovation and disruption. Western Infrabuild Products LLP has consistently produced excellent
                   results, and its work can be seen in distinguished parts of our nation.
                </p>
                <p style="text-align: justify; " class="mobile-padding mobile-textSize">
-                  We believe in continuous improvement, profitable growth, and superior customer service, thereby 
+                  We believe in continuous improvement, profitable growth, and superior customer service, thereby
                   benefiting both stakeholders and employees. I am excited to be a part of this journey.
                </p>
                <p style="text-align: justify; " class="mobile-padding mobile-textSize">
-                  In a nutshell, we believe that - "Great things are done by a series of small things brought together". 
+                  In a nutshell, we believe that - "Great things are done by a series of small things brought together".
                   We are constantly innovating and never stand still.
                </p>
                <p><strong>Mr. Ashfaque Z Khan</strong></p>
@@ -748,9 +763,9 @@
 <!--Clients Section-->
 <section class="clients-section">
    <div class="inner-container">
-   <h2 style="color: #007bff; text-align: center; font-size: 2.8rem; font-weight: 600; margin: 0px 0px;">
-    Some of Our Esteemed Clients
-</h2>
+      <h2 style="color: #007bff; text-align: center; font-size: 2.8rem; font-weight: 600; margin: 0px 0px;">
+         Some of Our Esteemed Clients
+      </h2>
 
       <br>
       <div class="sponsors-outer" style="padding-top:15px;">
@@ -1061,6 +1076,6 @@
 
 </section> -->
 
-
+<script src="https://app.wotnot.io/chat-widget/8BhUm7DMiZkn094356805994HwVzk273.js" defer></script>
 <!--End Clients Section-->
 <?php include 'home-footer.php'; ?>

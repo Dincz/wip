@@ -12,22 +12,23 @@
 </head>
 
 
+
 <?php
 $Products = [
     // ['title' => 'Western Steel [GI]', 'image' => "images/products/ceilingsection-gi/cielingsection.jpg", 'link' => 'products-western-steel.php'],
     // ['title' => 'Western Galvalume', 'image' => "images/products/Untitled design (3).png", 'link' => 'products-western-galvalume.php'],
     // ['title' => 'Western Frame [GI]', 'image' => "images/products/intermediatechannel-wf/_T6A0290.jpg", 'link' => 'products-western-frame.php'],
     // ['title' => 'Accessories', 'image' => "images/products/sofitcleat/T6A036901.jpg", 'link' => 'products-accessories.php'],
-    
-    ['title' => 'False Ceiling System', 'image' => "images/products/westerngypsumboard.png", 'link' => 'falseceiling.php'],
-    ['title' => 'DryWall Partition System', 'image' => "images/products/westerngypsumboard.png", 'link' => 'dryWall.php'],
+
+    ['title' => 'False Ceiling System', 'image' => "images/new/Product Images/Background-images-banner.jpg-V03 (1).jpg", 'link' => 'falseceiling.php'],
+    ['title' => 'Drywall Partition System', 'image' => "images//new/Product Images/Background-images-banner-07.jpg", 'link' => 'dryWall.php'],
     ['title' => 'Gypsum Board', 'image' => "images/products/Background-images-banner.jpg-06.jpg", 'link' => 'gymsum-board.php'],
     ['title' => 'Gypsum Plaster', 'image' => "images/products/Background-images-banner.jpg-05.jpg", 'link' => 'products-gypsum-plaster.php'],
-    ['title' => 'Smart Wall Putty', 'image' => "images/products/wcsmartwallputty/putti bag.jpg", 'link' => 'products-smart-wall-putty.php'],
+    ['title' => 'Smart Wall Putty', 'image' => "images/new/Product Images/Background-images-banner.jpg-v01 (2).jpg", 'link' => 'products-smart-wall-putty.php'],
     ['title' => 'Classic Bond', 'image' => "images/products/Background-images-banner.jpg-V04 (1).jpg", 'link' => 'products-bond-it.php'],
     ['title' => 'Access Panels', 'image' => "images/products/Background-images-banner.jpg-V02.jpg", 'link' => 'acessplane.php'],
     ['title' => 'T-Grid', 'image' => "images/products/Background-images-banner.jpg-V04 (1).jpg", 'link' => 'tgrid.php'],
-    
+
 ];
 ?>
 
@@ -47,33 +48,60 @@ $Products = [
     </div>
 </section> -->
 <!-- STyle for why western on hover -->
- <style>
+<style>
     .process-block .inner-box {
-    position: relative;
-    transition: all 0.3s ease;
-}
+        position: relative;
+        transition: all 0.3s ease;
+    }
 
-.process-block .inner-box:hover {
-    background-color: #f7f7f7;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    transform: translateY(-10px); /* Lift the block slightly */
-}
+    .process-block .inner-box:hover {
+        background-color: #f7f7f7;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        transform: translateY(-10px);
+        /* Lift the block slightly */
+    }
 
-.process-block .inner-box:hover .text {
-    color: #007bff; /* Bootstrap primary blue */
-    transition: color 0.3s ease;
-}
+    .process-block .inner-box:hover .text {
+        color: #007bff;
+        /* Bootstrap primary blue */
+        transition: color 0.3s ease;
+    }
 
-.process-block .inner-box:hover .count {
-    color: black; /* Slightly darker blue for contrast */
-    transition: color 0.3s ease;
-}
- </style>
+    .process-block .inner-box:hover .count {
+        color: black;
+        /* Slightly darker blue for contrast */
+        transition: color 0.3s ease;
+    }
+
+    /* pan section */
+    .banner-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .banner-container .inner-column {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    @media (min-width: 1920px) {
+        .banner-container .inner-column {
+            max-width: 1920px;
+        }
+    }
+
+    .coloringit {
+        background-color: blue;
+    }
+</style>
 <!-- Style ends -->
 <section class="banner-section-fo pt-0 mt-0">
-        <div class="slide-item">
-           <img src="images/banner/product-page-banner.jpg" class="img-fluid"  alt="banner">
-        </div>
+    <div class="slide-item">
+        <img src="images/banner/product-page-banner.jpg" class="img-fluid" alt="banner">
+    </div>
 
 </section>
 
@@ -143,7 +171,7 @@ $Products = [
 <!-- pc range end -->
 <!-- Product Section -->
 <div class="container py-5">
-    <h1 class="text-center text-uppercase fw-bold pb-5" >
+    <h1 class="text-center text-uppercase fw-bold pb-5">
         <span>Our Product Range</span>
     </h1>
     <!-- <h2 class="fw-bold text-center subTitle">False Ceiling Systems</h2> -->
@@ -156,7 +184,7 @@ $Products = [
                     <div class="caption text-left position-absolute" style="top:60%">
                         <h4 class="m-0 product-title"><?= $product['title'] ?></h4>
                         <p>
-                            <a href="<?= $product['link'] ?>" class="m-0 btn btn-primary rounded-0 text-left " role="button">Know More <i class="px-1 fa fa-chevron-right" aria-hidden="true"></i>
+                            <a href="<?= $product['link'] ?>" class="m-0 btn btn-primary rounded-0 text-left coloringit" role="button">Know More <i class="px-1 fa fa-chevron-right" aria-hidden="true"></i>
                             </a>
                         </p>
                     </div>
@@ -424,18 +452,16 @@ $Products = [
 <!-- end clients -->
 
 <!-- Pan India Section -->
-<section class="section">
-    <div class="auto-container ">
-        <div class="row no-gutters">
-            <!-- Image Column -->
-            <div class="image-column col-lg-12 col-md-12 col-sm-12">
-                <div class="inner-column">
-                    <img src="images/resource/Pan-India.jpg">
-                </div>
+<section class="section banner-container">
+    <div class="row no-gutters justify-content-center">
+        <div class="image-column col-12 text-center">
+            <div class="inner-column">
+                <img src="images/new/Banner 03.png" class="img-fluid" style="max-width: 100%; height: auto;">
             </div>
         </div>
     </div>
 </section>
+
 <!--End Pan India  Section -->
 
 <!-- Youtube section -->
@@ -450,7 +476,7 @@ $Products = [
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                    <a href="https://youtu.be/vDV4BtjLiD8?si=A7t3qK7oBgTzIoPB" target="_blank">
                         <div class="image" style="background-image: url(images/officegallery/1.jpg)">
                             <div class="overlay">
                                 <em class="mdi mdi-youtube"></em>
@@ -459,7 +485,7 @@ $Products = [
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="https://www.youtube.com/watch?v=6n3pIiWqaCE" target="_blank">
+                    <a href="https://youtu.be/NAPQsKeSLpA?si=fYTc_JZjAm9niE2O" target="_blank">
                         <div class="image" style="background-image: url(images/officegallery/2.jpg)">
                             <div class="overlay">
                                 <em class="mdi mdi-youtube"></em>
@@ -468,7 +494,7 @@ $Products = [
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="https://www.youtube.com/watch?v=aqz-KE-bpKQ" target="_blank">
+                    <a href="https://youtu.be/setbxC-es_s?si=1diDWwVH3ud3o698" target="_blank">
                         <div class="image" style="background-image: url(images/officegallery/3.jpg)">
                             <div class="overlay">
                                 <em class="mdi mdi-youtube"></em>
@@ -477,7 +503,7 @@ $Products = [
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="https://www.youtube.com/watch?v=Ra-Om7UMdJM" target="_blank">
+                    <a href="https://youtu.be/cavG_hBHvZg?si=JZN9MiuSTtpRGb7T" target="_blank">
                         <div class="image" style="background-image: url(images/officegallery/4.jpg)">
                             <div class="overlay">
                                 <em class="mdi mdi-youtube"></em>
@@ -486,7 +512,7 @@ $Products = [
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="https://www.youtube.com/watch?v=QH2-TGUlwu4" target="_blank">
+                    <a href="https://youtu.be/vcHt769a6xA?si=aAkhgIXlKtEEMj2R" target="_blank">
                         <div class="image" style="background-image: url(images/officegallery/5.jpg)">
                             <div class="overlay">
                                 <em class="mdi mdi-youtube"></em>
@@ -495,7 +521,7 @@ $Products = [
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="https://www.youtube.com/watch?v=MmITmSzk6mI" target="_blank">
+                    <a href="https://youtu.be/AuEx95DzWPU?si=Z-0zzAly39DXn3Ef" target="_blank">
                         <div class="image" style="background-image: url(images/officegallery/6.jpg)">
                             <div class="overlay">
                                 <em class="mdi mdi-youtube"></em>
@@ -507,6 +533,7 @@ $Products = [
             <div class="swiper-pagination"></div>
         </div>
     </div>
+
     <!--#Carousel Gallery-->
 
 
@@ -578,5 +605,3 @@ $Products = [
     </div>
     <!-- Youtube section ends -->
     <?php include 'page-footer.php'; ?>
-
-  

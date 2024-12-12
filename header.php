@@ -334,7 +334,7 @@
 
                                             <li><a href="products-smart-wall-putty.php">Smart Wall Putty</a></li>
                                             <li><a href="products-bond-it.php">Classic Bond</a></li>
-                                            <li><a href="gymsum-board.php">Western Gypsum Board</a></li>
+                                            <li><a href="gymsum-board.php">Gypsum Board</a></li>
                                             <li><a href="acessplane.php">Access Panels</a></li>
                                         </ul>
                                     </li>
@@ -363,7 +363,5 @@
                 </div>
             </div>
         </header>
-        <script>
-
-        </script>
+        <script src="https://app.wotnot.io/chat-widget/8BhUm7DMiZkn094356805994HwVzk273.js" defer></script>
         <!--End Main Header -->

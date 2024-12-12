@@ -104,12 +104,111 @@ $Products = [
     }
 
     .nav-tabs .nav-link {
-        background-color: black !important;
+        background-color: #0000ff !important;
         color: white !important;
         border-radius: 5px;
     }
-</style>
 
+    /* pan section */
+    .banner-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .banner-container .inner-column {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    @media (min-width: 1920px) {
+        .banner-container .inner-column {
+            max-width: 1920px;
+        }
+    }
+
+    .product-title {
+        font-weight: 700;
+        color: #333;
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    .list-unstyled li {
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 10px;
+    }
+
+    .list-unstyled li i {
+        position: absolute;
+        left: 0;
+        top: 4px;
+    }
+
+    .product-actions .btn {
+        transition: all 0.3s ease;
+        border-radius: 0;
+    }
+
+    .product-actions .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+</style>
+<!-- why style -->
+<style>
+    .process-block .inner-box {
+        position: relative;
+        transition: all 0.3s ease;
+    }
+
+    .process-block .inner-box:hover {
+        background-color: #f7f7f7;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        transform: translateY(-10px);
+        /* Lift the block slightly */
+    }
+
+    .process-block .inner-box:hover .text {
+        color: blue;
+        /* Bootstrap primary blue */
+        transition: color 0.3s ease;
+    }
+
+    .process-block .inner-box:hover .count {
+        color: black;
+        /* Slightly darker blue for contrast */
+        transition: color 0.3s ease;
+    }
+
+    /* pan section */
+    .banner-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .banner-container .inner-column {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    @media (min-width: 1920px) {
+        .banner-container .inner-column {
+            max-width: 1920px;
+        }
+    }
+
+    .coloringit {
+        background-color: #0065b3 !important;
+    }
+</style>
 <div>
     <section class="banner-section-four pb-5">
         <div class="">
@@ -143,61 +242,81 @@ $Products = [
             <div class="tab-content" id="productTabsContent">
                 <?php foreach ($Products as $index => $product): ?>
                     <div class="tab-pane <?= $index === 0 ? 'show active' : '' ?>" id="product-<?= $index ?>" role="tabpanel" aria-labelledby="tab-<?= $index ?>">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <!-- Product Image -->
-                                <img src="<?= $product['image'] ?>" alt="<?= $product['title'] ?>" class="img-fluid">
-                            </div>
-                            <div class="col-md-6">
-                                <!-- Product Descriptions -->
-                                <h3 class="fw-bold"><?= $product['title'] ?>
-                                    <?php if (isset($product['Features']) && !empty($product['Features'])): ?>
-                                        {<span><?= $product['Features'] ?></span>}
-                                    <?php endif; ?>
-                                </h3>
-
-                                <div>
-                                    <?php if (isset($product['Advantages']) && !empty($product['Advantages'])): ?>
-                                        <p><strong>Advantages:</strong></p>
-                                        <ul style="list-style-type:disc; padding-left: 20px;">
-                                            <?php
-                                            $advantages = explode("\n", $product['Advantages']);
-                                            foreach ($advantages as $advantage) {
-                                                echo "<li  style='list-style-type:disc'>" . trim($advantage) . "</li>";
-                                            }
-                                            ?>
-                                        </ul>
-                                    <?php endif; ?>
-
-                                    <?php if (isset($product['Features']) && !empty($product['Features'])): ?>
-                                        <p><strong>Features:</strong></p>
-                                        <ul style="list-style-type:disc; padding-left: 20px;">
-                                            <?php
-                                            $features = explode("\n", $product['Features']);
-                                            foreach ($features as $feature) {
-                                                echo "<li style='list-style-type:disc'>" . trim($feature) . "</li>";
-                                            }
-                                            ?>
-                                        </ul>
-                                    <?php endif; ?>
-
-                                    <?php if (isset($product['Dimensions']) && !empty($product['Dimensions'])): ?>
-                                        <p><strong>Dimensions:</strong></p>
-                                        <ul style="list-style-type:disc; padding-left: 20px;">
-                                            <?php
-                                            foreach ($product['Dimensions'] as $key => $dimension) {
-                                                echo "<li style='list-style-type:disc'>" . $dimension . "</li>";
-                                            }
-                                            ?>
-                                        </ul>
-                                    <?php endif; ?>
+                        <div class="container-fluid px-4">
+                            <div class="row align-items-center">
+                                <div class="col-md-6 mb-4">
+                                    <!-- Product Image with Card Effect -->
+                                    <div class="card shadow-sm">
+                                        <img src="<?= $product['image'] ?>" alt="<?= $product['title'] ?>" class="card-img-top img-fluid">
+                                    </div>
                                 </div>
+                                <div class="col-md-6">
+                                    <!-- Product Details with Enhanced Styling -->
+                                    <div class="product-details">
+                                        <h2 class="product-title mb-3">
+                                            <?= $product['title'] ?>
+                                            <?php if (isset($product['Features']) && !empty($product['Features'])): ?>
+                                                <small class="text-muted ml-2">{<?= $product['Features'] ?>}</small>
+                                            <?php endif; ?>
+                                        </h2>
 
-                                <div class="d-flex gap-2">
-                                    <p><a href="3" class="btn btn-primary rounded-0">Enquire Now <i class="px-1 fa fa-chevron-right" aria-hidden="true"></i></a></p>
-                                    <?php if (!empty($product['knowMoreLink'])): ?>
-                                        <p><a href="<?= $product['knowMoreLink'] ?>" class="btn btn-primary rounded-0 mx-4">Know More <i class="px-1 fa fa-chevron-right" aria-hidden="true"></i></a></p>
-                                    <?php endif; ?>
+                                        <?php if (isset($product['Advantages']) && !empty($product['Advantages'])): ?>
+                                            <div class="mb-3">
+                                                <h5 class="text-primary">Advantages</h5>
+                                                <ul class="list-unstyled pl-3">
+                                                    <?php
+                                                    $advantages = explode("\n", $product['Advantages']);
+                                                    foreach ($advantages as $advantage) {
+                                                        echo "<li class='mb-2'><i class='fa fa-check-circle text-success mr-2'></i>" . trim($advantage) . "</li>";
+                                                    }
+                                                    ?>
+                                                </ul>
+                                            </div>
+                                        <?php endif; ?>
+
+                                        <?php if (isset($product['Features']) && !empty($product['Features'])): ?>
+                                            <div class="mb-3">
+                                                <h5 class="text-primary">Features</h5>
+                                                <ul class="list-unstyled pl-3">
+                                                    <?php
+                                                    $features = explode("\n", $product['Features']);
+                                                    foreach ($features as $feature) {
+                                                        echo "<li class='mb-2'><i class='fa fa-caret-right text-info mr-2'></i>" . trim($feature) . "</li>";
+                                                    }
+                                                    ?>
+                                                </ul>
+                                            </div>
+                                        <?php endif; ?>
+
+                                        <?php if (isset($product['Dimensions']) && !empty($product['Dimensions'])): ?>
+                                            <div class="mb-3">
+                                                <h5 class="text-primary">Dimensions</h5>
+                                                <ul class="list-unstyled pl-3">
+                                                    <?php
+                                                    foreach ($product['Dimensions'] as $key => $dimension) {
+                                                        echo "<li class='mb-2'><i class='fa fa-ruler text-warning mr-2'></i>" . $dimension . "</li>";
+                                                    }
+                                                    ?>
+                                                </ul>
+                                            </div>
+                                        <?php endif; ?>
+
+                                        <div class="product-actions mt-4">
+                                            <a
+                                                href="javascript:void(0);"
+                                                class="btn btn-primary btn-lg mr-3 coloringit"
+                                                data-toggle="modal"
+                                                data-target="#contactModal">
+                                                ENQUIRE NOW <i class="fa fa-chevron-right ml-2" aria-hidden="true"></i>
+                                            </a>
+
+                                            <?php if (!empty($product['knowMoreLink'])): ?>
+                                                <a href="<?= $product['knowMoreLink'] ?>" class="btn btn-outline-primary btn-lg coloringit ">
+                                                    KNOW MORE <i class="fa fa-info-circle ml-2" aria-hidden="true"></i>
+                                                </a>
+                                            <?php endif; ?>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -207,6 +326,7 @@ $Products = [
         </div>
 </div>
 </section>
+<!-- WHy -->
 <section class="process-section" style="background-image: url(images/background/quality.jpg); margin-bottom: 20px">
     <div class="auto-container">
         <div class="sec-title light">
@@ -284,6 +404,7 @@ $Products = [
         </div>
     </div>
 </section>
+<!-- WHy end -->
 
 <section class="clients-section">
     <div class="inner-container">
@@ -444,18 +565,16 @@ $Products = [
 </section>
 
 <!-- Pan India Section -->
-<section class="section">
-    <div class="auto-container ">
-        <div class="row no-gutters">
-            <!-- Image Column -->
-            <div class="image-column col-lg-12 col-md-12 col-sm-12">
-                <div class="inner-column">
-                    <img src="images/resource/Pan-India.jpg">
-                </div>
+<section class="section banner-container">
+    <div class="row no-gutters justify-content-center">
+        <div class="image-column col-12 text-center">
+            <div class="inner-column">
+                <img src="images/new/Banner 03.png" class="img-fluid" style="max-width: 100%; height: auto;">
             </div>
         </div>
     </div>
 </section>
+
 <!--End Pan India  Section -->
 
 <!-- Youtube section -->
@@ -470,7 +589,7 @@ $Products = [
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                    <a href="https://youtu.be/vDV4BtjLiD8?si=A7t3qK7oBgTzIoPB" target="_blank">
                         <div class="image" style="background-image: url(images/officegallery/1.jpg)">
                             <div class="overlay">
                                 <em class="mdi mdi-youtube"></em>
@@ -479,7 +598,7 @@ $Products = [
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="https://www.youtube.com/watch?v=6n3pIiWqaCE" target="_blank">
+                    <a href="https://youtu.be/NAPQsKeSLpA?si=fYTc_JZjAm9niE2O" target="_blank">
                         <div class="image" style="background-image: url(images/officegallery/2.jpg)">
                             <div class="overlay">
                                 <em class="mdi mdi-youtube"></em>
@@ -488,7 +607,7 @@ $Products = [
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="https://www.youtube.com/watch?v=aqz-KE-bpKQ" target="_blank">
+                    <a href="https://youtu.be/setbxC-es_s?si=1diDWwVH3ud3o698" target="_blank">
                         <div class="image" style="background-image: url(images/officegallery/3.jpg)">
                             <div class="overlay">
                                 <em class="mdi mdi-youtube"></em>
@@ -497,7 +616,7 @@ $Products = [
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="https://www.youtube.com/watch?v=Ra-Om7UMdJM" target="_blank">
+                    <a href="https://youtu.be/cavG_hBHvZg?si=JZN9MiuSTtpRGb7T" target="_blank">
                         <div class="image" style="background-image: url(images/officegallery/4.jpg)">
                             <div class="overlay">
                                 <em class="mdi mdi-youtube"></em>
@@ -506,7 +625,7 @@ $Products = [
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="https://www.youtube.com/watch?v=QH2-TGUlwu4" target="_blank">
+                    <a href="https://youtu.be/vcHt769a6xA?si=aAkhgIXlKtEEMj2R" target="_blank">
                         <div class="image" style="background-image: url(images/officegallery/5.jpg)">
                             <div class="overlay">
                                 <em class="mdi mdi-youtube"></em>
@@ -515,7 +634,7 @@ $Products = [
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="https://www.youtube.com/watch?v=MmITmSzk6mI" target="_blank">
+                    <a href="https://youtu.be/AuEx95DzWPU?si=Z-0zzAly39DXn3Ef" target="_blank">
                         <div class="image" style="background-image: url(images/officegallery/6.jpg)">
                             <div class="overlay">
                                 <em class="mdi mdi-youtube"></em>
@@ -527,6 +646,7 @@ $Products = [
             <div class="swiper-pagination"></div>
         </div>
     </div>
+
     <!--#Carousel Gallery-->
     </div>
 

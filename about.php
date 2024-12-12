@@ -43,6 +43,25 @@
    .content-column {
       padding: 4px;
    }
+   /* pan section */
+   .banner-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .banner-container .inner-column {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    @media (min-width: 1920px) {
+        .banner-container .inner-column {
+            max-width: 1920px;
+        }
+    }
 
    @media (max-width: 576px) {
       .content-column a {
@@ -166,18 +185,16 @@
 </section>
 <!--End About Section -->
 <!-- Pan India Section -->
-<section class="section">
-   <div class="auto-container ">
-      <div class="row no-gutters">
-         <!-- Image Column -->
-         <div class="image-column col-lg-12 col-md-12 col-sm-12">
-            <div class="inner-column">
-               <img src="images/resource/Pan-India.jpg" style="margin: -25px 0 0 0;">
-            </div>
+<section class="section banner-container">
+   <div class="row no-gutters justify-content-center">
+      <div class="image-column col-12 text-center">
+         <div class="inner-column">
+            <img src="images/new/Banner 03.png" class="img-fluid" style="max-width: 100%; height: auto;">
          </div>
       </div>
    </div>
 </section>
+
 <!--End Pan India  Section -->
 <br><br><br><br>
 <!-- vision mission Section -->
@@ -214,7 +231,7 @@
 <!--End vision mission Section -->
 <!-- Quality Section -->
 <section class="process-section" style="background-image: url(images/background/quality.jpg);">
-   <div class="auto-container">
+   <div class="auto-container ">
       <div class="sec-title light">
          <span class="float-text">WESTERN</span>
          <h2>WHY WESTERN ?</h2>

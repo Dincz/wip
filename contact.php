@@ -88,6 +88,30 @@
         </div>
     </section>
 
+    <!-- contact us details -->
+    <div class="container py-4">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4 mb-2">
+                        <strong>Telephone:</strong>
+                        <p class="text-muted mb-0">022 - 27780104/05</p>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <strong>Mobile:</strong>
+                        <p class="text-muted mb-0">+91 - 9324683484</p>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <strong>Email:</strong>
+                        <p class="text-muted mb-0">
+                            <a href="mailto:admin@wipindia.com" class="text-primary">admin@wipindia.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Contact Page Section -->
     <section class="contact-page-section py-5">
         <div class="container">

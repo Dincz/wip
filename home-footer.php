@@ -2,6 +2,7 @@
    .social-icon-two a {
       color: #fff !important;
    }
+
    .btn {
       background-color: gold;
       color: black;
@@ -20,23 +21,52 @@
       letter-spacing: 2px;
    }
 
+   .floating-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border: none;
+      border-radius: 100px;
+      padding: 15px;
+      font-size: 16px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      z-index: 1030;
+      width: 60px;
+      height: 60px;
+   }
+
+   .floating-button:hover {
+      background-color: #128C7E;
+      /* Darker WhatsApp green */
+      transform: scale(1.05);
+   }
+
    @media (max-width:600px) {
       .floatButons {
-         width: 100% ;
+         width: 100%;
          position: fixed;
          bottom: 0px !important;
          right: 0px !important;
          z-index: 111;
          transform: rotate(0deg) !important;
-         display:inline-table;
+         display: inline-table;
       }
+
       .floatButons .btn {
-      letter-spacing: 0px !important; 
-      width: 50% !important;
+         letter-spacing: 0px !important;
+         width: 50% !important;
+      }
    }
-   }
-    /* Pop Up model */
-    .contact-form input,
+
+   /* Pop Up model */
+   .contact-form input,
    .contact-form select,
    .contact-form textarea {
       width: 100%;
@@ -58,6 +88,7 @@
    .sec-title h2 {
       margin-top: 0;
    }
+
    .sec-title {
       margin-bottom: 0 !important;
    }
@@ -66,8 +97,8 @@
 
 <div class="floatButons ">
 
-<button class="btn btn-primary rounded-0 fw-semibold lh-1" data-toggle="modal" data-target="#contactModal">Get in touch</button>
-<button class="btn btn-primary rounded-0 fw-semibold lh-1" onclick="downloadPDF()">Download Brochure</button>
+   <button class="btn btn-primary rounded-0 fw-semibold lh-1" data-toggle="modal" data-target="#contactModal">Get in touch</button>
+   <button class="btn btn-primary rounded-0 fw-semibold lh-1" onclick="downloadPDF()">Download Brochure</button>
 </div>
 
 
@@ -250,8 +281,13 @@
 </footer>
 <!-- End Main Footer -->
 </div>
+<a href="https://wa.me/9324683484" target="_blank" id="quoteBtn" class="floating-button">
+   <i class="fa fa-whatsapp fa-2x"></i>
+</a>
+
+
 <!--Scroll to top-->
-<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-circle-o-up"></span></div>
+<!-- <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-circle-o-up"></span></div> -->
 <!-- MOdel Script -->
 <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel">
    <div class="modal-dialog" role="document">
@@ -322,6 +358,11 @@
       link.download = 'westerninfra-e-brochure.pdf'; // Filename for download
       link.click(); // Trigger download
    }
+</script>
+<script>
+   document.getElementById('quoteBtn').addEventListener('click', function(e) {
+      window.open(this.href, '_blank');
+   });
 </script>
 <script src="js/jquery.js"></script>
 <script src="js/popper.min.js"></script>

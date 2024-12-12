@@ -115,31 +115,51 @@ $Products = [
         /* Slightly darker blue for contrast */
         transition: color 0.3s ease;
     }
-   
-
-/* Different Curve for Different Corners */
-.img-custom-curve {
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-.img-custom-curve:hover {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    transform: scale(1.02);
-}
 
 
-/* Circular Crop */
-.img-circle {
-    border-radius: 50%;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
+    /* Different Curve for Different Corners */
+    .img-custom-curve {
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
 
+    .img-custom-curve:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        transform: scale(1.02);
+    }
+
+
+    /* Circular Crop */
+    .img-circle {
+        border-radius: 50%;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* pan section */
+    .banner-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .banner-container .inner-column {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    @media (min-width: 1920px) {
+        .banner-container .inner-column {
+            max-width: 1920px;
+        }
+    }
 </style>
 
 <div>
@@ -194,7 +214,7 @@ $Products = [
                                             foreach ($advantages as $advantage) {
                                                 echo "<li class='mb-2'>
                                                         <span class='text-success mr-2'>✓</span>" .
-                                                     htmlspecialchars(trim($advantage)) . "</li>";
+                                                    htmlspecialchars(trim($advantage)) . "</li>";
                                             }
                                             ?>
                                         </ul>
@@ -218,9 +238,14 @@ $Products = [
 
                                 <div class="mt-4">
                                     <div class="btn-group" role="group" aria-label="Product Actions">
-                                        <a href="3" class="btn btn-primary rounded-0">
+                                        <a
+                                            href="javascript:void(0);"
+                                            class="btn btn-primary rounded-0"
+                                            data-toggle="modal"
+                                            data-target="#contactModal">
                                             ENQUIRE NOW <i class="ml-2"></i>
                                         </a>
+
                                         <?php if (!empty($product['knowMoreLink'])): ?>
                                             <a href="<?= $product['knowMoreLink'] ?>" class="btn btn-outline-primary rounded-0 ml-2">
                                                 KNOW MORE <i class="ml-2"></i>
@@ -472,18 +497,16 @@ $Products = [
     </section>
 
     <!-- Pan India Section -->
-    <section class="section">
-        <div class="auto-container ">
-            <div class="row no-gutters">
-                <!-- Image Column -->
-                <div class="image-column col-lg-12 col-md-12 col-sm-12">
-                    <div class="inner-column">
-                        <img src="images/resource/Pan-India.jpg">
-                    </div>
+    <section class="section banner-container">
+        <div class="row no-gutters justify-content-center">
+            <div class="image-column col-12 text-center">
+                <div class="inner-column">
+                    <img src="images/new/Banner 03.png" class="img-fluid" style="max-width: 100%; height: auto;">
                 </div>
             </div>
         </div>
     </section>
+
     <!--End Pan India  Section -->
 
     <!-- Youtube section -->
@@ -498,7 +521,7 @@ $Products = [
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                        <a href="https://youtu.be/vDV4BtjLiD8?si=A7t3qK7oBgTzIoPB" target="_blank">
                             <div class="image" style="background-image: url(images/officegallery/1.jpg)">
                                 <div class="overlay">
                                     <em class="mdi mdi-youtube"></em>
@@ -507,7 +530,7 @@ $Products = [
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="https://www.youtube.com/watch?v=6n3pIiWqaCE" target="_blank">
+                        <a href="https://youtu.be/NAPQsKeSLpA?si=fYTc_JZjAm9niE2O" target="_blank">
                             <div class="image" style="background-image: url(images/officegallery/2.jpg)">
                                 <div class="overlay">
                                     <em class="mdi mdi-youtube"></em>
@@ -516,7 +539,7 @@ $Products = [
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="https://www.youtube.com/watch?v=aqz-KE-bpKQ" target="_blank">
+                        <a href="https://youtu.be/setbxC-es_s?si=1diDWwVH3ud3o698" target="_blank">
                             <div class="image" style="background-image: url(images/officegallery/3.jpg)">
                                 <div class="overlay">
                                     <em class="mdi mdi-youtube"></em>
@@ -525,7 +548,7 @@ $Products = [
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="https://www.youtube.com/watch?v=Ra-Om7UMdJM" target="_blank">
+                        <a href="https://youtu.be/cavG_hBHvZg?si=JZN9MiuSTtpRGb7T" target="_blank">
                             <div class="image" style="background-image: url(images/officegallery/4.jpg)">
                                 <div class="overlay">
                                     <em class="mdi mdi-youtube"></em>
@@ -534,7 +557,7 @@ $Products = [
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="https://www.youtube.com/watch?v=QH2-TGUlwu4" target="_blank">
+                        <a href="https://youtu.be/vcHt769a6xA?si=aAkhgIXlKtEEMj2R" target="_blank">
                             <div class="image" style="background-image: url(images/officegallery/5.jpg)">
                                 <div class="overlay">
                                     <em class="mdi mdi-youtube"></em>
@@ -543,7 +566,7 @@ $Products = [
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="https://www.youtube.com/watch?v=MmITmSzk6mI" target="_blank">
+                        <a href="https://youtu.be/AuEx95DzWPU?si=Z-0zzAly39DXn3Ef" target="_blank">
                             <div class="image" style="background-image: url(images/officegallery/6.jpg)">
                                 <div class="overlay">
                                     <em class="mdi mdi-youtube"></em>
@@ -555,6 +578,7 @@ $Products = [
                 <div class="swiper-pagination"></div>
             </div>
         </div>
+
         <!--#Carousel Gallery-->
 </div>
 
