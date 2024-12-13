@@ -11,7 +11,7 @@
 
    .floatButons {
       position: fixed;
-      bottom: 35%;
+      bottom: 38%;
       right: -135px;
       z-index: 111;
       transform: rotate(270deg);
@@ -23,14 +23,14 @@
 
    .floating-button {
       position: fixed;
-      bottom: 20px;
-      right: 20px;
+      bottom: 9px;
+      right: 5px;
       background-color: #25D366;
       color: white;
       border: none;
       border-radius: 100px;
-      padding: 15px;
-      font-size: 16px;
+      padding: 17px;
+      font-size: 14px;
       text-decoration: none;
       display: flex;
       align-items: center;
@@ -38,8 +38,8 @@
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       transition: all 0.3s ease;
       z-index: 1030;
-      width: 60px;
-      height: 60px;
+      width: 45px;
+      height: 45px;
    }
 
    .floating-button:hover {

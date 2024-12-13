@@ -104,7 +104,7 @@ $Products = [
     }
 
     .nav-tabs .nav-link {
-        background-color: #0000ff !important;
+        background-color: #3988c4 !important;
         color: white !important;
         border-radius: 5px;
     }
@@ -205,13 +205,20 @@ $Products = [
         }
     }
 
-    .coloringit {
-        background-color: #0065b3 !important;
+
+    .btn-group-lg>.btn, .btn-lg {
+        font-size: 12px !important;
     }
 </style>
 <div>
     <section class="banner-section-four pb-5">
+        
         <div class="">
+        <a
+         href="javascript:void(0);"
+         class="slide-item p-0"
+         data-toggle="modal"
+         data-target="#contactModal">
             <div class="item p-0">
                 <img src="images/banner/Western-Ceiling-V-4.jpg" alt="err" class="w-100 h-100">
                 <!-- <div class="auto-container">
@@ -220,6 +227,7 @@ $Products = [
                     </div>
                 </div> -->
             </div>
+        </a>
         </div>
         <div class="overviewSection my-5 text-center">
             <h1 class="fw-bold">Overview</h1>

@@ -12,13 +12,38 @@
    }
 
    .about-us-title {
-      background-color: #456df1;
-      color: #ffffff;
-      padding: 20px;
-      margin-bottom: 40px;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-   }
+    background: linear-gradient(135deg, #456df1, #6a8ff7); /* Add a gradient for depth */
+    color: #ffffff;
+    padding: 16px 20px; /* Balanced padding for desktop */
+    margin-bottom: 40px;
+    border-radius: 6px; /* Moderate rounding for modern aesthetics */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Deeper shadow for a floating effect */
+    text-align: center;
+    font-size: 22px; /* Slightly larger font for boldness */
+    font-weight: 700; /* Stronger emphasis */
+    letter-spacing: 1px; /* Enhance legibility */
+    text-transform: uppercase; /* Make the title stand out */
+    position: relative; /* For decorative effects */
+    overflow: hidden; /* Ensure any effects stay contained */
+}
+
+/* Add a decorative underline effect */
+.about-us-title::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.about-us-title:hover::after {
+    width: 80%; /* Expand underline on hover for interactivity */
+}
 
    .about-us-description {
       color: #333;
@@ -43,9 +68,12 @@
       }
 
       .about-us-title {
-         padding: 9px;
-         font-size: 16px;
-      }
+        padding: 12px 16px; /* Adjust padding for smaller screens */
+        font-size: 18px; /* Optimize font size for mobile */
+        border-radius: 4px;
+        background: linear-gradient(135deg, #5a7efb, #89a8ff); /* Slightly lighter gradient for mobile */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12); /* Softer shadow on mobile */
+    }
 
       .about-us-description {
          font-size: 16px;

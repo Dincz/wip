@@ -19,6 +19,8 @@
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-T5CJKK3V');
     </script>
+        <script src="https://app.wotnot.io/chat-widget/8BhUm7DMiZkn094356805994HwVzk273.js" defer></script>
+
     <!-- End Google Tag Manager -->
     <meta charset="utf-8">
     <title>Western - Infrabuild Products LLP </title>
@@ -363,5 +365,4 @@
                 </div>
             </div>
         </header>
-        <script src="https://app.wotnot.io/chat-widget/8BhUm7DMiZkn094356805994HwVzk273.js" defer></script>
         <!--End Main Header -->
