@@ -298,7 +298,7 @@ $Products = [
 <!-- some of our clients -->
 <section class="clients-section">
     <div class="inner-container">
-        <h2 style="color: black;text-align: center;">Some of our Esteemed Clients</h2>
+        <h2   class="title-color" style="text-align: center; ">Some of our Esteemed Clients</h2>
         <br>
         <div class="sponsors-outer">
             <ul class="logogrid">
@@ -474,7 +474,7 @@ $Products = [
 
 <body translate="no">
     <div class="title">
-        <h2 style="color: black;text-align: center;">YouTube Gallery</h2>
+        <h2  class="title-color"style="text-align: center;">YouTube Gallery</h2>
     </div>
     <!--Carousel Gallery-->
     <div class="carousel-gallery1" style="margin-bottom: 133px;">
