@@ -319,7 +319,7 @@
                                             <li>
 
                                             <li class="dropdown">
-                                                <a href="products-western-steel.php" onclick="window.location='falseceiling.php'" ;>False Ceiling</a>
+                                                <a href="products-western-steel.php" onclick="window.location='falseceiling.php'" ;>False Ceiling System</a>
                                                 <ul>
                                                     <li><a href="products-western-steel.php">Western Steel (GI)</a></li>
                                                     <li><a href="products-western-galvalume.php">Western Galvalume</a></li>

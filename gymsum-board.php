@@ -33,12 +33,56 @@
       gtag('config', 'G-E56XGST1LX');
    </script>
 </head>
+<style>
+   @media screen and (min-width: 700px) {
+      .mobileHide {
+         display: none;
+      }
+
+      .mobileUnHide {
+         display: block;
+         text-align: center;
+      }
+   }
+
+   @media screen and (max-width: 700px) {
+      .mobileUnHide {
+         display: block;
+         text-align: center;
+         margin-bottom: 0px;
+         padding-bottom: 0px;
+      }
+
+      .mobileHide {
+         display: none;
+      }
+
+      .extraHide {
+         padding-top: 42px;
+      }
+   }
+
+   @media screen and (max-width: 700px) {
+      .news-section:after {
+         background-image: none !important;
+      }
+
+      .news-section:before {
+         background-image: none !important;
+
+      }
+   }
+</style>
 
 <body>
    <div class="page-wrapper">
       <!-- Preloader -->
       <div class="preloader"></div>
       <?php include 'products-header.php'; ?>
+      <section class="hero-section">
+         <img src="images/new/1920x830.jpg" alt="Gypsun Board" class="img-fluid w-100">
+      </section>
+      <h2 class="font-weight-bold text-primary mobileUnHide">GYPSUM BOARD</h2>
 
       <!-- <section class="hero-section">
          <div class="container">
@@ -68,8 +112,8 @@
                <div class="col-lg-6 col-md-6 d-flex flex-column justify-content-center">
                   <div class="content-column px-4">
                      <div class="content-box mb-4">
-                        <h2 class="font-weight-bold text-primary">GYPSUM BOARD</h2>
-                        <p class="prddetail text-justify">
+                        <h2 class="font-weight-bold text-primary mobileHide">GYPSUM BOARD</h2>
+                        <p class="prddetail text-justify extraHide">
                            <strong>WESTERN GYPSUM BOARD</strong> covers the full spectrum of plasterboard (also known as gypsum board, drywall, or wallboard). It ranges from standard boards for general use to technical boards with fire, water, and impact resistance properties. All Western Gypsum Board types are manufactured to the highest quality standards. Western Gypsum Board is 99.9% natural. They are light, strong, and easy to cut and handle.
                         </p>
                      </div>
