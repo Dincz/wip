@@ -46,7 +46,7 @@
    @media (max-width: 768px) {
       .floating-button {
          position: fixed;
-         bottom: 35px;
+         bottom: 51px;
          right: 5px;
          background-color: #25D366;
          color: white;
@@ -61,8 +61,8 @@
          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
          transition: all 0.3s ease;
          z-index: 1030;
-         width: 40px;
-         height: 40px;
+         width: 50px;
+         height: 50px;
       }
    }
 

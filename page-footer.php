@@ -47,6 +47,28 @@
       /* Darker WhatsApp green */
       transform: scale(1.05);
    }
+   @media (max-width: 768px) {
+      .floating-button {
+         position: fixed;
+         bottom: 51px;
+         right: 5px;
+         background-color: #25D366;
+         color: white;
+         border: none;
+         border-radius: 100px;
+         padding: 17px;
+         font-size: 14px;
+         text-decoration: none;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+         transition: all 0.3s ease;
+         z-index: 1030;
+         width: 50px;
+         height: 50px;
+      }
+   }
 
    @media (max-width:600px) {
       .floatButons {

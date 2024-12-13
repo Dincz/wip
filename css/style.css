@@ -1794,7 +1794,7 @@ img {
 }
 
 .header-style-five .main-menu .navigation > li > a {
-  padding: 45px 0;
+  padding: 0;
 }
 
 .header-style-five .main-menu .navigation > li > a:before {
@@ -5632,6 +5632,10 @@ header-style-seven .nav-toggler:hover {
   -o-transition: all 300ms ease;
   transition: all 300ms ease;
   height: 165px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 .process-block .inner-box:hover {

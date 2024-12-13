@@ -19,7 +19,7 @@
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-T5CJKK3V');
     </script>
-        <script src="https://app.wotnot.io/chat-widget/8BhUm7DMiZkn094356805994HwVzk273.js" defer></script>
+    <script src="https://app.wotnot.io/chat-widget/8BhUm7DMiZkn094356805994HwVzk273.js" defer></script>
 
     <!-- End Google Tag Manager -->
     <meta charset="utf-8">
@@ -227,8 +227,9 @@
                 <div class="col-12">
                     <!-- Mobile Contact Info (Visible only on mobile) -->
                     <div class="mobile-contact-info">
-                        <p class="contact-info text-center">
-                            <i class="fa fa-envelope"></i> admin@wipindia.com
+                        <p style="color:#fff">
+                            <i class="fa fa-phone"></i>
+                            <a href="tel:+919324683484" style="color:#fff; text-decoration:none;">+91 932 468 3484</a>
                         </p>
                     </div>
 
@@ -267,8 +268,9 @@
                         <div class="col-12">
                             <!-- Mobile Contact Info (Visible only on mobile) -->
                             <div class="mobile-contact-info">
-                                <p class="contact-info text-center">
-                                    <i class="fa fa-envelope"></i> admin@wipindia.com
+                            <p style="color:#fff">
+                                    <i class="fa fa-phone"></i>
+                                    <a href="tel:+919324683484" style="color:#fff; text-decoration:none;">+91 932 468 3484</a>
                                 </p>
                             </div>
 

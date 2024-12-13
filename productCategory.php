@@ -52,21 +52,26 @@ $Products = [
     .process-block .inner-box {
         position: relative;
         transition: all 0.3s ease;
+        border:1px dashed black;
+        background-color:grey; 
+    }
+    .process-block .inner-box {
+        
     }
 
+
     .process-block .inner-box:hover {
-        background-color: #f7f7f7;
+        background-color: gold;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         transform: translateY(-10px);
         /* Lift the block slightly */
     }
 
     .process-block .inner-box:hover .text {
-        color: #007bff;
+        color: black;
         /* Bootstrap primary blue */
         transition: color 0.3s ease;
     }
-
     .process-block .inner-box:hover .count {
         color: black;
         /* Slightly darker blue for contrast */
@@ -212,18 +217,18 @@ $Products = [
     </div> -->
 </div>
 <!-- WHy -->
-<section class="process-section" style="background-image: url(images/background/quality.jpg); margin-bottom: 20px">
+<section class="process-section" style="background: linear-gradient(to bottom,#F8FAFC, #F8FAFC); margin-bottom: 20px">
     <div class="auto-container">
         <div class="sec-title light">
-            <span class="float-text">WESTERN</span>
-            <h2>WHY WESTERN ?</h2>
+            <span class="float-text" style="color: black;">WESTERN</span>
+            <h2 style="color: black;">WHY WESTERN ?</h2>
         </div>
         <div class="row">
             <!-- Process Block -->
             <div class="process-block col-lg-4 col-md-6 col-sm-12">
-                <div class="inner-box">
+                <div class="inner-box" >
                     <span class="count">01</span>
-                    <div class="text">Only Indian Firm having fire rated drywall systems, fire test certificate issued
+                    <div class="text text-center">Only Indian Firm having fire rated drywall systems, fire test certificate issued
                         by CBRI (Govt of India).</div>
                 </div>
             </div>
@@ -254,7 +259,7 @@ $Products = [
             <div class="process-block col-lg-4 col-md-6 col-sm-12">
                 <div class="inner-box">
                     <span class="count">05</span>
-                    <div class="text">State of Art machineries and factory setup.</div>
+                    <div class="text text-center">State of Art machineries and factory setup.</div>
                 </div>
             </div>
             <!-- Process Block -->
